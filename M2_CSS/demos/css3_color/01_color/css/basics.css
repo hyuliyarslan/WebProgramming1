@@ -1,0 +1,11 @@
+body {
+    font-family: verdana, sans-serif;
+
+    color: #000080; /* navy  -->  rgb(0, 0, 128)  hsl(240, 100%, 50%) */
+    background-color: #e6e6fa; /* lavender --> rgb(230, 230, 250)  hsl(240,67%, 94%) */
+}
+
+h1 {
+    background-color: #4c7285; /* gold  --> rgb(255, 215, 0)  hsl(51, 100%, 50%) */
+}
+

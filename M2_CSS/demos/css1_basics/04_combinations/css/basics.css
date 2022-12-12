@@ -1,0 +1,19 @@
+h1, h3 {
+    background-color: burlywood;
+}
+
+aside li, footer li {
+    background-color: beige;
+}
+
+aside > ul {
+    background-color: aquamarine;
+}
+
+section + section {
+    color: red;
+}
+
+h1 ~ section {
+    background-color: greenyellow;
+}

@@ -1,0 +1,12 @@
+p {
+    overflow: hidden; /* scroll, visible */
+    /* white space: nowrap; */
+    border: solid 2px red;
+    width: 25%;
+   /* height: 100px; */
+    text-overflow: ellipsis; /* clip */
+}
+
+
+
+/* Experiment using different overlow strategies */

@@ -1,0 +1,14 @@
+body {
+    font-family: verdana, sans-serif;
+    font-size: 150%;
+}
+
+h1 {
+    color: white;
+    text-shadow: 0 0 3px black;
+}
+
+p {
+    text-shadow: 4px 4px 6px red;
+}
+

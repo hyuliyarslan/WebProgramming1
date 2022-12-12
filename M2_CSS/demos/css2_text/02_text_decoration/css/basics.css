@@ -1,0 +1,21 @@
+p {
+    font-family: verdana, sans-serif;
+    border: solid 1px red;
+    width: 50%
+}
+
+a {
+    text-decoration: none;
+}
+
+span.over {
+    text-decoration: overline;
+}
+
+span.under {
+    text-decoration: underline;
+}
+
+span.through {
+    text-decoration: line-through;
+}

@@ -1,0 +1,15 @@
+p {
+    text-transform: capitalize;
+}
+
+p.upper {
+    text-transform: uppercase;
+}
+
+p.lower {
+    text-transform: lowercase;
+}
+
+span.notransform {
+    text-transform: none;
+}

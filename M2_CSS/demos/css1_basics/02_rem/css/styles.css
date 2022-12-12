@@ -1,0 +1,21 @@
+html {
+    font-size: 16pt;
+}
+
+body {
+    font-size: 8pt;
+}
+
+article {
+    font-size: 2em;
+}
+
+h1 {
+    font-size: 2em;
+    border: solid red;
+    height: 2em;
+}
+
+p {
+    font-size: 1.5rem;
+}

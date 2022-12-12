@@ -1,0 +1,15 @@
+main > h1 {
+    color: blue;
+}
+
+main h1 {
+    background-color: burlywood;
+}
+
+ul > .amazonOrange{
+    background-color: #FF9900;
+}
+
+h1 ~ ol {
+    color: red;
+}

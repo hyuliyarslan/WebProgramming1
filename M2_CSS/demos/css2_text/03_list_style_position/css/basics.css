@@ -1,0 +1,12 @@
+body {
+    font-family: verdana, sans-serif;
+    font-size: 1.5em;
+}
+
+ul {
+    list-style: square outside;
+}
+
+ol {
+    list-style: decimal-leading-zero inside;
+}

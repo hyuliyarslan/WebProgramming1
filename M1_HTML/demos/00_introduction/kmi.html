@@ -1,0 +1,1957 @@
+<!DOCTYPE html><!--[if lte IE 9]>
+<html class="no-js lt-ie9" lang="nl" data-mustredirect="false" data-default-slug="belgie"
+      data-locale="nl"><![endif]--><!--[if gt IE 9]><!-->
+<html lang="nl" data-mustredirect="false" data-default-slug="belgie" data-locale="nl"><!--<![endif]-->
+<head>
+    <script src="/frontend/js/bundle-head.js?v20221117-0704"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <meta name="apple-itunes-app" content="app-id=393832976"/>
+    <link rel="canonical" href="https://www.meteo.be/nl/belgie"/>
+    <title>Het weerbericht voor België - KMI</title>
+    <meta name="description"
+          content="Het weerbericht voor België. Uurlijkse voorspellingen tot 48u en dagelijkse voorspellingen tot 14 dagen."/>
+    <link rel="shortcut icon" href="/favicon.ico?v20221117-0704" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v20221117-0704">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v20221117-0704">
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png?v20221117-0704">
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="/favicon-180x180.png?v20221117-0704">
+    <link rel="manifest" href="/manifest.json?v20221117-0704">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg?v20221117-0704" color="#0056ef">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="/frontend/css/style.css?v20221117-0704" type="text/css"/>
+    <link href="//fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet"><!-- Matomo -->
+    <script>
+        var _paq = window._paq = window._paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function () {
+            var u = "//webtest-09.meteo.be/";
+            _paq.push(['setTrackerUrl', u + 'matomo.php']);
+            _paq.push(['setSiteId', '1']);
+            var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+            g.async = true;
+            g.src = u + 'matomo.js';
+            s.parentNode.insertBefore(g, s);
+        })();
+    </script><!-- End Matomo Code --><!-- vendors:js -->
+    <script src="/frontend/WebComponents/vendors/jquery.min.js"></script>
+    <script src="/frontend/WebComponents/vendors/jquery.touchSwipe.min.js"></script>
+    <script src="/frontend/WebComponents/vendors/pako.min.js"></script>
+    <script src="/frontend/WebComponents/vendors/rangeslider.min.js"></script>
+    <script src="/frontend/WebComponents/vendors/slick.min.js"></script><!-- endinject --><!-- polyfill:js -->
+    <script src="/frontend/WebComponents/polyfill/webcomponents-lite.js"></script><!-- endinject -->
+    <!-- webcomponents:html -->
+    <link rel="import" href="/frontend/WebComponents/Elements/webcomponents.html"><!-- endinject -->
+    <script>dataLayer = [];</script>
+</head>
+<body class=" homepage  "
+      data-nis=""
+      data-commune-name=""
+      data-region="belgium"
+      data-locale="nl"
+      data-slug="belgie"
+      data-default-commune-name="brussel"
+><!-- Google Tag Manager -->
+<noscript>
+    <iframe src="//www.googletagmanager.com/ns.html?id=GTM-M5KLQ7C" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+</noscript>
+<script>
+    (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+        var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-M5KLQ7C');
+</script><!-- End Google Tag Manager --><!--[if lt IE 10]>
+<div class="outdated">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12"><h1 class="outdated__title">
+                Uw browser is verouderd.
+            </h1>
+                <h3 class="outdated__subtitle">
+                    Sommige inhoud kan verloren gaan of zal niet correct weergegeven worden.
+                </h3>
+                <p class="outdated__description">
+                    Gelieve een meer recente versie van uw browser te installeren.
+                </p><a href="http://browsehappy.com/?locale=nl" target="_blank"
+                       class="btn btn--secondary outdated__button">
+                    Upgrade uw browser
+                </a></div>
+        </div>
+    </div>
+</div><![endif]-->
+<div class="backstretch">
+    <header role="header" class="main-header">
+        <div class="container"><a href="/nl" class="main-header__logo"><img
+                src="/frontend/img/general/logo-kmi--nl.svg?v20221117-0704"
+                alt="Het Koninklijk Meteorologisch Instituut van België" class="main-header__logo__img"></a>
+            <nav role="navigation" class="main-header__nav">
+                <div class="main-header__nav__wrapper">
+                    <ul class="primary-nav js-primary-nav">
+                        <li class="primary-nav__item class2 "><a href="/nl/weer" class="primary-nav__item__link">
+                            Weer
+                        </a>
+                            <ul class="primary-nav__item__sublist">
+                                <li class="primary-nav__item__sublist__item"><a href="/nl/weer/verwachtingen"
+                                                                                class="primary-nav__item__sublist__item__link ">
+                                    Verwachtingen
+                                </a></li>
+                                <li class="primary-nav__item__sublist__item"><a href="/nl/weer/waarnemingen"
+                                                                                class="primary-nav__item__sublist__item__link ">
+                                    Waarnemingen
+                                </a></li>
+                                <li class="primary-nav__item__sublist__item"><a href="/nl/weer/waarschuwingen"
+                                                                                class="primary-nav__item__sublist__item__link ">
+                                    Waarschuwingen
+                                </a></li>
+                            </ul>
+                        </li>
+                        <li class="primary-nav__item class2 "><a href="/nl/klimaat" class="primary-nav__item__link">
+                            Klimaat
+                        </a>
+                            <ul class="primary-nav__item__sublist">
+                                <li class="primary-nav__item__sublist__item"><a href="/nl/klimaat/klimaat-van-belgie"
+                                                                                class="primary-nav__item__sublist__item__link ">
+                                    Klimaat van België
+                                </a></li>
+                                <li class="primary-nav__item__sublist__item"><a
+                                        href="/nl/klimaat/klimaatverandering-in-belgie"
+                                        class="primary-nav__item__sublist__item__link ">
+                                    Klimaatverandering in België
+                                </a></li>
+                                <li class="primary-nav__item__sublist__item"><a href="/nl/klimaat/klimaat-in-de-wereld"
+                                                                                class="primary-nav__item__sublist__item__link ">
+                                    Klimaat in de wereld
+                                </a></li>
+                            </ul>
+                        </li>
+                        <li class="primary-nav__item class2 "><a href="/nl/onderzoek" class="primary-nav__item__link">
+                            Onderzoek
+                        </a>
+                            <ul class="primary-nav__item__sublist">
+                                <li class="primary-nav__item__sublist__item"><a href="/nl/onderzoek/domeinen"
+                                                                                class="primary-nav__item__sublist__item__link ">
+                                    Onderzoeksdomeinen
+                                </a></li>
+                                <li class="primary-nav__item__sublist__item"><a
+                                        href="/nl/onderzoek/agenda-van-de-seminaries"
+                                        class="primary-nav__item__sublist__item__link ">
+                                    Agenda van de seminaries
+                                </a></li>
+                            </ul>
+                        </li>
+                        <li class="primary-nav__item class2 "><a href="/nl/diensten" class="primary-nav__item__link">
+                            Diensten
+                        </a>
+                            <ul class="primary-nav__item__sublist">
+                                <li class="primary-nav__item__sublist__item"><a href="/nl/diensten/producten-diensten"
+                                                                                class="primary-nav__item__sublist__item__link ">
+                                    Producten &amp; diensten
+                                </a></li>
+                                <li class="primary-nav__item__sublist__item"><a href="/nl/diensten/algemene-voorwaarden"
+                                                                                class="primary-nav__item__sublist__item__link ">
+                                    Algemene voorwaarden
+                                </a></li>
+                            </ul>
+                        </li>
+                        <li class="primary-nav__item class2 "><a href="/nl/info" class="primary-nav__item__link">
+                            Nieuws en info
+                        </a>
+                            <ul class="primary-nav__item__sublist">
+                                <li class="primary-nav__item__sublist__item"><a href="/nl/info/nieuwsoverzicht"
+                                                                                class="primary-nav__item__sublist__item__link ">
+                                    Nieuwsoverzicht
+                                </a></li>
+                                <li class="primary-nav__item__sublist__item"><a href="/nl/info/nieuwsbrief"
+                                                                                class="primary-nav__item__sublist__item__link ">
+                                    Nieuwsbrief
+                                </a></li>
+                                <li class="primary-nav__item__sublist__item"><a href="/nl/info/podcasts"
+                                                                                class="primary-nav__item__sublist__item__link ">
+                                    Podcasts
+                                </a></li>
+                                <li class="primary-nav__item__sublist__item"><a href="/nl/info/weerwoorden"
+                                                                                class="primary-nav__item__sublist__item__link ">
+                                    WeerWoorden
+                                </a></li>
+                                <li class="primary-nav__item__sublist__item"><a href="/nl/info/veelgestelde-vragen"
+                                                                                class="primary-nav__item__sublist__item__link ">
+                                    Veelgestelde vragen
+                                </a></li>
+                                <li class="primary-nav__item__sublist__item"><a href="/nl/info/bij-meteoz-en-nova"
+                                                                                class="primary-nav__item__sublist__item__link ">
+                                    Bij Meteoz en Nova (Kids)
+                                </a></li>
+                                <li class="primary-nav__item__sublist__item"><a href="/nl/info/publicaties"
+                                                                                class="primary-nav__item__sublist__item__link ">
+                                    Publicaties
+                                </a></li>
+                            </ul>
+                        </li>
+                        <li class="primary-nav__item class2 "><a href="/nl/over-het-kmi"
+                                                                 class="primary-nav__item__link">
+                            Over het KMI
+                        </a>
+                            <ul class="primary-nav__item__sublist">
+                                <li class="primary-nav__item__sublist__item"><a href="/nl/over-het-kmi/onze-strategie"
+                                                                                class="primary-nav__item__sublist__item__link ">
+                                    Onze strategie
+                                </a></li>
+                                <li class="primary-nav__item__sublist__item"><a href="/nl/over-het-kmi/presentatie"
+                                                                                class="primary-nav__item__sublist__item__link ">
+                                    Wat doet het KMI?
+                                </a></li>
+                                <li class="primary-nav__item__sublist__item"><a href="/nl/over-het-kmi/structuur"
+                                                                                class="primary-nav__item__sublist__item__link ">
+                                    Structuur
+                                </a></li>
+                                <li class="primary-nav__item__sublist__item"><a href="/nl/over-het-kmi/geschiedenis"
+                                                                                class="primary-nav__item__sublist__item__link ">
+                                    Geschiedenis
+                                </a></li>
+                                <li class="primary-nav__item__sublist__item"><a
+                                        href="/nl/over-het-kmi/waarnemingsnetwerk"
+                                        class="primary-nav__item__sublist__item__link ">
+                                    Het waarnemingsnetwerk
+                                </a></li>
+                                <li class="primary-nav__item__sublist__item"><a href="/nl/over-het-kmi/milieumanagement"
+                                                                                class="primary-nav__item__sublist__item__link ">
+                                    Milieumanagement
+                                </a></li>
+                                <li class="primary-nav__item__sublist__item"><a
+                                        href="/nl/over-het-kmi/gender-equality-gender-mainstreaming"
+                                        class="primary-nav__item__sublist__item__link ">
+                                    Gender equality &amp; gender mainstreaming
+                                </a></li>
+                                <li class="primary-nav__item__sublist__item"><a
+                                        href="/nl/over-het-kmi/juridische-informatie"
+                                        class="primary-nav__item__sublist__item__link ">
+                                    Juridische informatie
+                                </a></li>
+                                <li class="primary-nav__item__sublist__item"><a href="/nl/over-het-kmi/contact"
+                                                                                class="primary-nav__item__sublist__item__link ">
+                                    Contact
+                                </a></li>
+                                <li class="primary-nav__item__sublist__item"><a
+                                        href="/nl/over-het-kmi/werken-bij-het-kmi"
+                                        class="primary-nav__item__sublist__item__link ">
+                                    Werken bij het KMI
+                                </a></li>
+                                <li class="primary-nav__item__sublist__item"><a href="/nl/over-het-kmi/links"
+                                                                                class="primary-nav__item__sublist__item__link ">
+                                    Links
+                                </a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <aside class="main-header__nav__extra">
+                        <div class="language-nav">
+                            <nav role="navigation"><span class="language-nav__item language-nav__item--active">
+                                        nl
+                                    </span><a href="/fr/switch-language/27?nis=21004" data-locale="fr"
+                                              class="js-language-chooser language-nav__item language-nav__item--link">
+                                fr
+                            </a><a href="/de/switch-language/27?nis=21004" data-locale="de"
+                                   class="js-language-chooser language-nav__item language-nav__item--link">
+                                de
+                            </a><a href="/en/switch-language/27?nis=21004" data-locale="en"
+                                   class="js-language-chooser language-nav__item language-nav__item--link">
+                                en
+                            </a></nav>
+                        </div>
+                        <form action="/nl/zoeken" class="search"><input name="query" type="search"
+                                                                        class="search__input form-control"></form>
+                    </aside>
+                </div>
+            </nav>
+            <button class="btn main-header__mobile-btn js-mobile-nav-button"><span
+                    class="main-header__mobile-btn__text">menu</span><span
+                    class="main-header__mobile-btn__icon"><span></span><span></span><span></span><span></span></span>
+            </button>
+            <form action="/nl/zoeken" class="search search--mobile"><input name="query" type="search"
+                                                                           class="search__input form-control"></form>
+        </div>
+    </header>
+    <main role="main" class="main-content mobile-nav__content">
+        <svg style="width:0;height:0;position:absolute;" aria-hidden="true" focusable="false">
+            <defs>
+                <linearGradient id="svg-gradient" x1="0" x2="0" y1="0" y2="1">
+                    <stop offset="0%" stop-color="#52B1D8"/>
+                    <stop offset="100%" stop-color="#2979AF"/>
+                </linearGradient>
+            </defs>
+        </svg>
+        <div
+                class="js-change-location-wrapper"
+                data-change-location="/nl/webservice/getLocation/26?dayNr=1"
+                data-fetch-favorites="https://www.meteo.be/nl/render-esi/favorites?location%5Bslug%5D=brussel&amp;location%5Bnis%5D=21004&amp;location%5Bname%5D=Brussel"
+        >
+            <div class="container">
+                <div id="bannerHomePage" class="region-pp__banner"></div>
+                <div class="region-pp btn-nav">
+                    <ul class="btn-nav__list region-pp__btn-nav">
+                        <li class="btn-nav__list__item local "><a href="/nl"><span>Lokaal</span></a></li>
+                        <li class="btn-nav__list__item active"><a href="/nl/belgie"><span>België</span></a></li>
+                        <!--<li class="btn-nav__list__item "><a href="/nl/wereld"><span>Wereld</span></a></li>--></ul>
+                </div>
+            </div>
+            <div class="container"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 js-dynamic-region">
+                        <div class="days-of-the-week__pre">Voorspelling voor het centrum van het land</div>
+                        <div class="days-of-the-week__wrapper">
+                            <button class="btn days-of-the-week__nav days-of-the-week__nav--back js-dotw-nav"
+                                    data-dir="back" data-target="#days-of-the-week-scroll"><i
+                                    class="icon icon--chevron--left"></i></button>
+                            <button class="btn days-of-the-week__nav days-of-the-week__nav--forward js-dotw-nav"
+                                    data-dir="forward" data-target="#days-of-the-week-scroll"><i
+                                    class="icon icon--chevron--right"></i></button>
+                            <div id="days-of-the-week-scroll" data-active-day-id="1" class="days-of-the-week"
+                                 data-href="https://www.meteo.be/nl/meteo/change-day/26/21004">
+                                <!-- From cache: true -->
+                                <day-of-the-week name="Vrijdag" daynr="1" daytype="D0" timestamp="1669968000" mintemp=""
+                                                 maxtemp="3" humiditypct="50" typeFrom="731" stability="stable"
+                                                 windSpeedbft="4" windspeeddirection="225"></day-of-the-week>
+                                <day-of-the-week name="Vannacht" daynr="2" daytype="N1" timestamp="1670000400"
+                                                 mintemp="1" maxtemp="" humiditypct="0" typeFrom="700_night"
+                                                 stability="stable" windSpeedbft="3"
+                                                 windspeeddirection="225"></day-of-the-week>
+                                <day-of-the-week name="Zaterdag" daynr="3" daytype="D1" timestamp="1670043600"
+                                                 mintemp="1" maxtemp="3" humiditypct="10" typeFrom="500"
+                                                 stability="change" typeTo="700" windSpeedbft="3"
+                                                 windspeeddirection="247"></day-of-the-week>
+                                <day-of-the-week name="Zondag" daynr="4" daytype="D2" timestamp="1670130000"
+                                                 mintemp="-1" maxtemp="3" humiditypct="10" typeFrom="700"
+                                                 stability="stable" windSpeedbft="3"
+                                                 windspeeddirection="270"></day-of-the-week>
+                                <day-of-the-week name="Maandag" daynr="5" daytype="D3" timestamp="1670216400"
+                                                 mintemp="1" maxtemp="3" humiditypct="60" typeFrom="741"
+                                                 stability="change" typeTo="731" windSpeedbft="2"
+                                                 windspeeddirection=""></day-of-the-week>
+                                <day-of-the-week name="Dinsdag" daynr="6" daytype="D4" timestamp="1670302800"
+                                                 mintemp="2" maxtemp="4" humiditypct="10" typeFrom="700"
+                                                 stability="change" typeTo="500" windSpeedbft="2"
+                                                 windspeeddirection=""></day-of-the-week>
+                                <day-of-the-week name="Woensdag" daynr="7" daytype="D5" timestamp="1670389200"
+                                                 mintemp="2" maxtemp="4" humiditypct="30" typeFrom="500"
+                                                 stability="stable" windSpeedbft="3"
+                                                 windspeeddirection="90"></day-of-the-week>
+                                <day-of-the-week name="Donderdag" daynr="8" daytype="D6" timestamp="1670475600"
+                                                 mintemp="-1" maxtemp="2" humiditypct="30" typeFrom="500"
+                                                 stability="stable" windSpeedbft="3"
+                                                 windspeeddirection="22"></day-of-the-week>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 js-dynamic-left-region">
+                        <div class="belgium-observation-pp box">
+                            <div class="loader loader--inner" data-loader-groups='[&quot;BelgiumObservation&quot;]'>
+                                <div class="loader__content">
+                                    <div class="loader__animation"></div>
+                                </div>
+                            </div>
+                            <div class="box__inner">
+                                <!-- From cache: true -->
+                                <belgium-observation-comp title="Het weer" subtitle="vrijdag  2 december 2022">
+                                    <image type="location"
+                                           uri="/services/web2016/getObservationBelgiumMap.php?type=D0&amp;language=nl"></image>
+                                </belgium-observation-comp>
+                            </div>
+                        </div>
+                        <div class="warnings-pp box">
+                            <div class="box__inner">
+                                <!-- From cache: false -->
+                                <warnings-cmp title="Waarschuwingen">
+                                    <warning-cmp localtitle="Vlaams-Brabant" belgiumtitle="België"
+                                                 modal-title="Waarschuwingen voor België" footerlink="Meer informatie"
+                                                 footerlinklocation="/nl/weer/waarschuwingen/overzichtskaart-belgie">
+                                        <warning-cmp-belgium icon="warning_ice-snow" level="watchout" title="Gladheid"
+                                                             tooltip="Gladheid (geel)"></warning-cmp-belgium>
+                                        <warning-desc-cmp icon="warning_ice-snow" level="watchout" title="Gladheid"
+                                                          tooltip="Gladheid (geel)"
+                                                          description="Vandaag trekt een zwakke neerslagzone over onze strekken. Op de Ardense hoogten liggen de temperaturen rond 0 graden en boven 400 m is er kans op wat sneeuw (0 tot plaatselijk 3 cm).&#10;&#10;Volgende nacht wordt het droger maar in de Ardennen is het opletten voor plaatselijke ijsplekken.&#10;"
+                                                          warningtime="Van 02/12/2022 10:00 tot 03/12/2022 08:00"
+                                                          mapUrl="https://www.meteo.be/gfx/warnings/forecast-warning-2-150.png"></warning-desc-cmp>
+                                    </warning-cmp>
+                                    <warning-detail-cmp sunriseicon="998" sunrise="08:24" sunseticon="999"
+                                                        sunset="16:40" suntooltip="Ephemeris" pollenicon="999"
+                                                        pollentooltip="Allergierisico" pollen="Geen actieve pollen"
+                                                        pollenhref="/nl/weer/verwachtingen/stuifmeelallergie-en-hooikoorts"
+                                                        coicon="999" cotooltip="CO waarschuwingen"
+                                                        coflag="Geen CO waarschuwing"
+                                                        cohref="/nl/info/veelgestelde-vragen/hoe-je-beschermen-tegen-gevaarlijk-weer/co-een-sluipende-moordenaar-in-huis"
+                                                        uvicon="888" uv="Laag (0.7)" uvlevelicon="0.7"
+                                                        uvtooltip="Uv-index"
+                                                        uvhref="/nl/weer/verwachtingen/uv-index"></warning-detail-cmp>
+                                    <ephemeride-graphics daylength-title="Lengte van de dag" daylength="8u.16"
+                                                         daylight-title="Resterende daglicht" daylight="7u.05"
+                                                         style="display: none">
+                                        <svg version="1.1" x="0px" y="0px" preserveAspectRatio="xMinYMin meet"
+                                             viewBox="0 0 400 230">
+
+
+                                            <title>Ephemeride</title>
+                                            <defs>
+
+
+                                                <clipPath id="fill">
+
+                                                    <circle r="120" cx="120" cy="120"></circle>
+                                                </clipPath>
+                                                <clipPath id="circle">
+
+                                                    <rect width="400" height="140" transform="translate(0, -20)"></rect>
+                                                </clipPath>
+                                                <clipPath id="sun">
+
+                                                    <rect width="400" height="140"
+                                                          transform="translate(0, -20.5)"></rect>
+                                                </clipPath>
+                                            </defs>
+                                            <style>
+                                                .label {
+                                                    font-size: 16px;
+                                                    fill: #293A4B;
+                                                }
+
+                                                .label--small {
+                                                    font-size: 13px;
+                                                    fill: #5C6D7E;
+                                                }
+
+                                                .fill--orange {
+                                                    fill: #F1C40F;
+                                                }
+
+                                                .fill--orange--light {
+                                                    fill: #F9EDB2;
+                                                }
+
+                                                .fill--livid {
+                                                    fill: #5C6D7E;
+                                                }
+
+                                                .fill--livid--dark {
+                                                    fill: #293A4B;
+                                                }
+
+                                                .stroke--livid {
+                                                    stroke: #5C6D7E;
+                                                }
+                                            </style>
+                                            <g transform="translate(0, 20)">
+
+
+                                                <g transform="translate(80, 130)">
+
+
+                                                    <text x="0" y="10" class="label" alignment-baseline="middle"
+                                                          text-anchor="middle">08u24
+                                                    </text>
+                                                    <path class="fill--livid--dark" transform="translate(-16,31)"
+                                                          d="M15.7,6a.65.65,0,0,0,.6-.6V.6a.6.6,0,1,0-1.2,0V5.4A.58.58,0,0,0,15.7,6Zm13-.2L25.3,9.2a.75.75,0,0,0,0,.9.5.5,0,0,0,.8,0l3.4-3.4a.75.75,0,0,0,0-.9A.61.61,0,0,0,28.7,5.8ZM3.1,5.8a.75.75,0,0,0,0,.9l3.4,3.4a.76.76,0,0,0,.4.2.76.76,0,0,0,.4-.2.75.75,0,0,0,0-.9L3.9,5.8A.61.61,0,0,0,3.1,5.8ZM32,18.7H25.9a9.6,9.6,0,0,0-19.2,0H.6a.6.6,0,1,0,0,1.2H32a.6.6,0,0,0,0-1.2Z"></path>
+                                                    <text x="0" y="65" class="label" alignment-baseline="middle"
+                                                          text-anchor="middle">Zonsopgang
+                                                    </text>
+                                                </g>
+                                                <g transform="translate(320, 130)">
+
+
+                                                    <text x="0" y="10" class="label" alignment-baseline="middle"
+                                                          text-anchor="middle">16u40
+                                                    </text>
+                                                    <path class="fill--livid--dark" transform="translate(-16,40)"
+                                                          d="M32.4,9.8H26.3a9.8,9.8,0,1,0-19.6,0H.6A.6.6,0,0,0,.6,11h32a.65.65,0,0,0,.6-.6c0-.3-.5-.6-.8-.6"></path>
+                                                    <text x="0" y="65" class="label" alignment-baseline="middle"
+                                                          text-anchor="middle">Zonsondergang
+                                                    </text>
+                                                </g>
+                                                <g clip-path="url(#circle)">
+
+
+                                                    <g clip-path="url(#fill)" transform="translate(80, 0)">
+
+                                                        <rect width="13.636796077391011" height="120"
+                                                              class="fill--orange--light"></rect>
+                                                    </g>
+                                                    <circle cx="200" cy="120" r="120" stroke="grey" stroke-dasharray="3"
+                                                            fill="none"></circle>
+                                                </g>
+                                                <line x1="0" y1="120" x2="400" y2="120" class="stroke--livid"
+                                                      stroke-width="1"></line>
+                                                <g clip-path="url(#sun)">
+
+                                                    <g transform="rotate(27.580645161290324, 200, 120)" opacity="1">
+
+                                                        <path class="fill--orange"
+                                                              transform="translate(66.5,105.5) scale(1.5)"
+                                                              d="M2.68,6.79c.13.05.13.05.22,0s.18-.08.15-.17a.45.45,0,0,0-.19-.46l-2.35-1A.45.45,0,0,0,0,5.38a.45.45,0,0,0,.19.46ZM16,11.67a.45.45,0,0,0-.46.19.45.45,0,0,0,.19.46l2.35,1c.13.05.13.05.22,0s.18-.08.15-.17a.45.45,0,0,0-.19-.46ZM12.15,3c.09,0,.18-.08.15-.17l1-2.35A.45.45,0,0,0,13.09,0a.45.45,0,0,0-.46.19l-.89,2.31a.45.45,0,0,0,.19.46A.31.31,0,0,0,12.15,3ZM5.91,18.32l1-2.35a.45.45,0,0,0-.19-.46.45.45,0,0,0-.46.19l-1,2.35a.45.45,0,0,0,.19.46c.13.05.13.05.22,0S5.82,18.36,5.91,18.32ZM18.14,5.72l-2.4,1a.3.3,0,1,0,.23.55l2.4-1a.27.27,0,0,0,.16-.39A.27.27,0,0,0,18.14,5.72ZM3,12.28a.27.27,0,0,0-.39-.16l-2.4,1A.27.27,0,0,0,0,13.5a.27.27,0,0,0,.39.16l2.4-1A.27.27,0,0,0,3,12.28Zm9.87,6.11-1-2.4a.3.3,0,0,0-.55.23l1,2.4a.3.3,0,0,0,.55-.23ZM6.3,3.24a.27.27,0,0,0,.16-.39l-1-2.4A.27.27,0,0,0,5.08.28a.27.27,0,0,0-.16.39l1,2.4A.27.27,0,0,0,6.3,3.24Zm4.9,10.85A5.23,5.23,0,0,0,14,7.31,5.16,5.16,0,0,0,7.24,4.48a5.2,5.2,0,0,0,4,9.62Z"></path>
+                                                    </g>
+                                                </g>
+                                                <circle cx="80" cy="120" r="3" class="fill--orange"></circle>
+                                                <circle cx="320" cy="120" r="3" class="fill--orange"></circle>
+                                                <text x="400" y="120" class="label--small" transform="translate(-3,-7)"
+                                                      alignment-baseline="middle" text-anchor="end">Horizon
+                                                </text>
+                                            </g>
+                                        </svg>
+                                    </ephemeride-graphics>
+                                </warnings-cmp>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 js-dynamic-center-region">
+                        <div class="now-cast-pp box">
+                            <div class="loader loader--inner" data-loader-groups='[&quot;forecast&quot;]'>
+                                <div class="loader__content">
+                                    <div class="loader__animation"></div>
+                                </div>
+                            </div>
+                            <div class="box__inner">
+                                <!-- From cache: true -->
+                                <now-cast title="Verwachtingen voor volgende uren" subtitle="Laatste update:"
+                                          updatedAt="1669969080" viewDetails="" detailsLink="">
+                                    <div style="width: 40%; float:left;"><img
+                                            src="/services/web2016/getNowcastMap.php?id=156702" style=""></img></div>
+                                    <div style="text-align: justify; padding-bottom: 2rem;">
+                                        <div>
+                                            <div style="width: 8px; height: 22px; margin: 5px; background: #3498db; float: left; vertical-align: middle;;"></div>
+                                            Zwaarbewolkt en overwegend droog.
+                                        </div>
+                                        <div style="padding-top: 1rem; clear:both;"></div>
+                                        <div>
+                                            <div style="width: 8px; height: 44px; margin: 5px; background: #293A4B; float: left; vertical-align: middle;;"></div>
+                                            Zwaarbewolkt en overwegend droog met vooral op de hoogten nevel of mist.
+                                        </div>
+                                        <div style="padding-top: 1rem; clear:both;"></div>
+                                        <div>
+                                            <div style="width: 8px; height: 66px; margin: 5px; background: #E9C31C; float: left; vertical-align: middle;;"></div>
+                                            Zwaarbewolkt met nevel of lokale mist en kans op wat sneeuwval boven 300 à
+                                            400 m, lager eerder wat smeltende sneeuw.
+                                        </div>
+                                    </div>
+                                </now-cast>
+                                <now-cast title="Verwachtingen voor vrijdag" subtitle="Laatste update:" updatedAt=""
+                                          viewDetails="Uitgebreid weerbericht bekijken"
+                                          detailsLink="/nl/weer/verwachtingen/weer-voor-de-komende-dagen">
+                                    <div style="text-align: justify; padding-bottom: 2rem;">Vandaag is het zwaarbewolkt
+                                        met geleidelijk wat lichte neerslag. De hoeveelheid stelt weinig voor en valt
+                                        vooral over het zuidoosten van het land. In de Hoge Ardennen verwachten we wat
+                                        sneeuw. Elders gaat het om regen of motregen, maar enkele smeltende
+                                        sneeuwvlokken zijn niet uitgesloten. Over de Noordzee komen buien tot
+                                        ontwikkeling, en deze bereiken mogelijk onze Kuststreek. De maxima variëren
+                                        tussen -1 graad in de Oostkantons en +4 graden over het westen van het land. De
+                                        wind is matig uit het noordoosten, wat het koudegevoel versterkt.
+                                    </div>
+                                </now-cast>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 dyn-tabs-images-pp">
+                        <div class="tabs-images-pp">
+                            <div class="box">
+                                <!-- From cache: false -->
+                                <tabs-comp>
+                                    <rain-canvas tab-title="Neerslag" details-link="/nl/weer/verwachtingen/neerslag">
+                                        <canvas uri="/services/web2016/data/radar_canvas/data-homepage/radar-202212020830.bin"
+                                                width="373" height="306"
+                                                style="width:100%;background: url('/services/web2016/radar_canvas/Background-homepage-scaled-nl.png');background-repeat: no-repeat;min-height:306px;background-size: 100% 100%;"
+                                                name="Neerslag en bliksem"></canvas>
+                                        <legend title="LEGENDE"></legend>
+                                        <imagetitle title="Neerslag en bliksem"></imagetitle>
+                                        <scales>
+                                            <levels>
+                                                <level name="zeer licht"></level>
+                                                <level name="licht"></level>
+                                                <level name="matig"></level>
+                                                <level name="hevig"></level>
+                                                <level name="zeer hevig"></level>
+                                                <level name="wolkbreuk/hagel"></level>
+                                            </levels>
+                                            <lightningselect name="bliksem" on="aan" off="uit"></lightningselect>
+                                            <rainscaleselect name="stijl"></rainscaleselect>
+                                            <scale id="default" name="standaard">
+                                                <rainscale>
+                                                    <color value="#52fff1a0"></color>
+                                                    <color value="#4bd1dcc0"></color>
+                                                    <color value="#44a2c8c8"></color>
+                                                    <color value="#3c74b3d8"></color>
+                                                    <color value="#35459fd8"></color>
+                                                    <color value="#2e178ad8"></color>
+                                                </rainscale>
+                                                <coverage>
+                                                    <color value="#bdbfbf80"></color>
+                                                </coverage>
+                                                <lightningscale>
+                                                    <color value="#00000000"></color>
+                                                    <color value="rgba(255,  0,  0,128)"></color>
+                                                    <color value="rgba(255, 80,  0,160)"></color>
+                                                    <color value="rgba(250,160,  1,192)"></color>
+                                                    <color value="rgba(255,200,  0,255)"></color>
+                                                    <color value="rgba(255,240,  0,255)"></color>
+                                                    <color value="rgba(255,255,  0,255)"></color>
+                                                    <color value="rgba(125,125,125,160)"></color>
+                                                </lightningscale>
+                                            </scale>
+                                            <scale id="scale2" name="contrast">
+                                                <rainscale>
+                                                    <color value="#554cdda0"></color>
+                                                    <color value="#768efcc0"></color>
+                                                    <color value="#aad1f2c8"></color>
+                                                    <color value="#f1e3a4d8"></color>
+                                                    <color value="#e8b22cd8"></color>
+                                                    <color value="#bb3b18d8"></color>
+                                                </rainscale>
+                                                <coverage>
+                                                    <color value="#bdbfbf80"></color>
+                                                </coverage>
+                                                <lightningscale>
+                                                    <color value="#00000000"></color>
+                                                    <color value="rgba(255,  0,  0,128)"></color>
+                                                    <color value="rgba(255, 80,  0,160)"></color>
+                                                    <color value="rgba(250,160,  1,192)"></color>
+                                                    <color value="rgba(255,200,  0,255)"></color>
+                                                    <color value="rgba(255,240,  0,255)"></color>
+                                                    <color value="rgba(255,255,  0,255)"></color>
+                                                    <color value="rgba(125,125,125,160)"></color>
+                                                </lightningscale>
+                                            </scale>
+                                            <scale id="scale3" name="geel-rood">
+                                                <rainscale>
+                                                    <color value="#fde801a0"></color>
+                                                    <color value="#fed700c0"></color>
+                                                    <color value="#fac901c8"></color>
+                                                    <color value="#fda800d8"></color>
+                                                    <color value="#c94d03d8"></color>
+                                                    <color value="#c90042d8"></color>
+                                                </rainscale>
+                                                <coverage>
+                                                    <color value="#bdbfbf80"></color>
+                                                </coverage>
+                                                <lightningscale>
+                                                    <color value="#00000000"></color>
+                                                    <color value="rgba(255,  0,  0,128)"></color>
+                                                    <color value="rgba(255, 80,  0,160)"></color>
+                                                    <color value="rgba(250,160,  1,192)"></color>
+                                                    <color value="rgba(255,200,  0,255)"></color>
+                                                    <color value="rgba(255,240,  0,255)"></color>
+                                                    <color value="rgba(255,255,  0,255)"></color>
+                                                    <color value="rgba(125,125,125,160)"></color>
+                                                </lightningscale>
+                                            </scale>
+                                        </scales>
+                                    </rain-canvas>
+                                    <weather-maps tab-title="Weerkaarten" overview-title="Overzicht">
+                                        <weather-map-item map-title="Temperatuur" map-icon="temperature" type="location"
+                                                          time="1669970403"
+                                                          uri="/services/web2016/getObservationImage.php?type=temp&amp;language=nl"></weather-map-item>
+                                        <weather-map-item map-title="Windstoten" map-icon="wind" type="location"
+                                                          time="1669970403"
+                                                          uri="/services/web2016/getObservationImage.php?type=peak&amp;language=nl"></weather-map-item>
+                                        <weather-map-item map-title="Bliksem" map-icon="lightning" type="location"
+                                                          time="1669970403"
+                                                          uri="/services/web2016/getLightningImage.php?language=nl"></weather-map-item>
+                                        <weather-map-item map-title="Wolkenbeelden" map-icon="clouds" type="location"
+                                                          time="1669970403"
+                                                          uri="/services/web2016/getVisirEUImage.php?language=nl"></weather-map-item>
+                                        <weather-map-item map-title="Odyssey (Neerslag Europa)" map-icon="rain"
+                                                          type="location" time="1669970403"
+                                                          uri="/services/web2016/getOdysseyImage.php?language=nl"></weather-map-item>
+                                        <weather-map-item map-title="Hagel" map-icon="hail" type="location"
+                                                          time="1669970403"
+                                                          uri="/services/web2016/getHailImage.php?language=nl"></weather-map-item>
+                                    </weather-maps>
+                                    <weather-maps tab-title="Webcams" overview-title="Overzicht">
+                                        <weather-map-item map-title="Diepenbeek (Limburg)" map-icon="webcam"
+                                                          type="location" time="1669970166"
+                                                          uri="/services/web2016/getWebcamImage.php?target=Diepenbeek&amp;lang=nl"></weather-map-item>
+                                        <weather-map-item map-title="Dourbes (Namen)" map-icon="webcam" type="location"
+                                                          time="1669970166"
+                                                          uri="/services/web2016/getWebcamImage.php?target=Dourbes&amp;lang=nl"></weather-map-item>
+                                        <weather-map-item map-title="Humain (Luxemburg)" map-icon="webcam"
+                                                          type="location" time="1669970171"
+                                                          uri="/services/web2016/getWebcamImage.php?target=Humain1&amp;lang=nl"></weather-map-item>
+                                        <weather-map-item map-title="Jabbeke (West-Vlaanderen)" map-icon="webcam"
+                                                          type="location" time="1669970296"
+                                                          uri="/services/web2016/getWebcamImage.php?target=Jabbeke&amp;lang=nl"></weather-map-item>
+                                        <weather-map-item map-title="Melle (Oost-Vlaanderen)" map-icon="webcam"
+                                                          type="location" time="1669970166"
+                                                          uri="/services/web2016/getWebcamImage.php?target=Melle&amp;lang=nl"></weather-map-item>
+                                        <weather-map-item map-title="Mont-Rigi (Luik)" map-icon="webcam" type="location"
+                                                          time="1669970166"
+                                                          uri="/services/web2016/getWebcamImage.php?target=MontRigi1&amp;lang=nl"></weather-map-item>
+                                        <weather-map-item map-title="Saint-Hubert (Luxemburg)" map-icon="webcam"
+                                                          type="location" time="1669970171"
+                                                          uri="/services/web2016/getWebcamImage.php?target=Sthubert&amp;lang=nl"></weather-map-item>
+                                        <weather-map-item map-title="Stabroek (Antwerpen)" map-icon="webcam"
+                                                          type="location" time="1669970166"
+                                                          uri="/services/web2016/getWebcamImage.php?target=Stabroek&amp;lang=nl"></weather-map-item>
+                                        <weather-map-item map-title="Ukkel (Brussel)" map-icon="webcam" type="location"
+                                                          time="1669970171"
+                                                          uri="/services/web2016/getWebcamImage.php?target=Ukkel&amp;lang=nl"></weather-map-item>
+                                        <weather-map-item map-title="Wideumont (Luxemburg)" map-icon="webcam"
+                                                          type="location" time="1669970296"
+                                                          uri="/services/web2016/getWebcamImage.php?target=Wideumont&amp;lang=nl"></weather-map-item>
+                                        <weather-map-item map-title="Zeebrugge (Kust)" map-icon="webcam" type="location"
+                                                          time="1669970166"
+                                                          uri="/services/web2016/getWebcamImage.php?target=Zeebrugge&amp;lang=nl"></weather-map-item>
+                                    </weather-maps>
+                                    <weather-maps tab-title="Snowcams" overview-title="Overzicht">
+                                        <weather-map-item map-title="Humain (Luxemburg)" map-icon="snowcam"
+                                                          type="location" time="1669969866"
+                                                          uri="/services/web2016/getWebcamImage.php?target=Humain2&amp;lang=nl"></weather-map-item>
+                                        <weather-map-item map-title="Mont-Rigi (Luik)" map-icon="snowcam"
+                                                          type="location" time="1669969866"
+                                                          uri="/services/web2016/getWebcamImage.php?target=MontRigi2&amp;lang=nl"></weather-map-item>
+                                        <weather-map-item map-title="Saint-Hubert (Luxemburg)" map-icon="snowcam"
+                                                          type="location" time="1669970166"
+                                                          uri="/services/web2016/getWebcamImage.php?target=Sthubert2&amp;lang=nl"></weather-map-item>
+                                        <weather-map-item map-title="Ukkel (Brussel)" map-icon="snowcam" type="location"
+                                                          time="1669969866"
+                                                          uri="/services/web2016/getWebcamImage.php?target=Ukkel2&amp;lang=nl"></weather-map-item>
+                                        <weather-map-item map-title="Wideumont (Luxemburg)" map-icon="snowcam"
+                                                          type="location" time="1669970296"
+                                                          uri="/services/web2016/getWebcamImage.php?target=Wideumont2&amp;lang=nl"></weather-map-item>
+                                    </weather-maps>
+                                </tabs-comp>
+                            </div>
+                        </div>
+                        <div class="icon-link-block-pp"><a href="" class="box box--dark"><i
+                                class="icon icon--sun icon-link-block-pp__icon"></i>
+                            <div class="icon-link-block-pp__content"><h3 class="icon-link-block-pp__content__title">
+                                UV</h3>
+                                <p class="icon-link-block-pp__content__desc">Van Zeebrugge, Oostende, Antwerpen en
+                                    Terneuzen.</p></div>
+                        </a></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="forecast-days-pp box">
+                            <div class="box__inner">
+                                <!-- From cache: false -->
+                                <forecast-days title="Verwachtingen 14 dagen"
+                                               moreTitle="Bekijk de verwachtingen in detail" moreLink="#"
+                                               textDetails="Ook op langere termijn zijn de vooruitzichten nog onzeker. Vermoedelijk bevinden we ons nog steeds in een vrij koude luchtmassa met licht positieve maxima, wijdverspreide nachtvorst en soms kans op (winterse) neerslag.">
+                                    <forecast-days-item type="temperature-max" icon="temperature"
+                                                        title="Maximumtemperatuur">
+                                        <svg class="kmi-svg" version="1.1" x="0px" y="0px" preserveAspectRatio="xMinYMin meet" viewBox="0 0 1150 370" xml:space="preserve">
+
+
+
+
+
+
+
+<style type="text/css">
+         g.wwbox text {
+             display: none;
+         }
+
+         g.wwbox:hover text {
+             display: block;
+         }
+</style><title>Maximum temperatuur</title><g transform="translate(100, 220)"><g transform="translate(-25, -10)"><text class="fill--livid text-size--normal" transform="translate(16, 70)">vr</text><text
+                                                class="fill--livid text-size--normal"
+                                                transform="translate(4, 90)">02/12</text></g>
+                                            <g transform="translate(50, -10)"><rect class="fill--weekend" x="-12.5" y="-184" width="75" height="180"></rect>
+                                                <text class="fill--livid text-size--normal"
+                                                      transform="translate(16, 70)">za</text>
+                                                <text class="fill--livid text-size--normal"
+                                                      transform="translate(4, 90)">03/12</text></g>
+                                            <g transform="translate(125, -10)"><rect class="fill--weekend" x="-12.5" y="-184" width="75" height="180"></rect>
+                                                <text class="fill--livid text-size--normal"
+                                                      transform="translate(16, 70)">zo</text>
+                                                <text class="fill--livid text-size--normal"
+                                                      transform="translate(4, 90)">04/12</text></g>
+                                            <g transform="translate(200, -10)"><text class="fill--livid text-size--normal" transform="translate(16, 70)">ma</text>
+                                                <text class="fill--livid text-size--normal"
+                                                      transform="translate(4, 90)">05/12</text></g>
+                                            <g transform="translate(275, -10)"><text class="fill--livid text-size--normal" transform="translate(16, 70)">di</text>
+                                                <text class="fill--livid text-size--normal"
+                                                      transform="translate(4, 90)">06/12</text></g>
+                                            <g transform="translate(350, -10)"><text class="fill--livid text-size--normal" transform="translate(16, 70)">wo</text>
+                                                <text class="fill--livid text-size--normal"
+                                                      transform="translate(4, 90)">07/12</text></g>
+                                            <g transform="translate(425, -10)"><text class="fill--livid text-size--normal" transform="translate(16, 70)">do</text>
+                                                <text class="fill--livid text-size--normal"
+                                                      transform="translate(4, 90)">08/12</text></g>
+                                            <g transform="translate(500, -10)"><text class="fill--livid text-size--normal" transform="translate(16, 70)">vr</text>
+                                                <text class="fill--livid text-size--normal"
+                                                      transform="translate(4, 90)">09/12</text></g>
+                                            <g transform="translate(575, -10)"><rect class="fill--weekend" x="-12.5" y="-184" width="75" height="180"></rect>
+                                                <text class="fill--livid text-size--normal"
+                                                      transform="translate(16, 70)">za</text>
+                                                <text class="fill--livid text-size--normal"
+                                                      transform="translate(4, 90)">10/12</text></g>
+                                            <g transform="translate(650, -10)"><rect class="fill--weekend" x="-12.5" y="-184" width="75" height="180"></rect>
+                                                <text class="fill--livid text-size--normal"
+                                                      transform="translate(16, 70)">zo</text>
+                                                <text class="fill--livid text-size--normal"
+                                                      transform="translate(4, 90)">11/12</text></g>
+                                            <g transform="translate(725, -10)"><text class="fill--livid text-size--normal" transform="translate(16, 70)">ma</text>
+                                                <text class="fill--livid text-size--normal"
+                                                      transform="translate(4, 90)">12/12</text></g>
+                                            <g transform="translate(800, -10)"><text class="fill--livid text-size--normal" transform="translate(16, 70)">di</text>
+                                                <text class="fill--livid text-size--normal"
+                                                      transform="translate(4, 90)">13/12</text></g>
+                                            <g transform="translate(875, -10)"><text class="fill--livid text-size--normal" transform="translate(16, 70)">wo</text>
+                                                <text class="fill--livid text-size--normal"
+                                                      transform="translate(4, 90)">14/12</text></g>
+                                            <g transform="translate(950, -10)"><text class="fill--livid text-size--normal" transform="translate(16, 70)">do</text>
+                                                <text class="fill--livid text-size--normal"
+                                                      transform="translate(4, 90)">15/12</text></g></g><g
+                                                transform="translate(10, -20)"><g transform="translate(0,225)"><text transform="translate(20,3)" class="fill--livid text-size--normal">-5 °</text><line
+                                                class="guide-line" x1="70" y1="0" x2="1090" y2="0"></line></g>
+                                            <g transform="translate(0,170)"><text transform="translate(27,3)" class="fill--livid text-size--normal">0 °</text>
+                                                <line class="guide-line" x1="70" y1="0" x2="1090" y2="0"></line></g>
+                                            <g transform="translate(0,115)"><text transform="translate(27,3)" class="fill--livid text-size--normal">5 °</text>
+                                                <line class="guide-line" x1="70" y1="0" x2="1090" y2="0"></line></g>
+                                            <g transform="translate(0,60)"><text transform="translate(20,3)" class="fill--livid text-size--normal">10 °</text>
+                                                <line class="guide-line" x1="70" y1="0" x2="1090" y2="0"></line></g></g><g
+                                                id="graph-group" transform="translate(100, 35)"><path class="graph-line--range-fill--dark" d=" M 0 82 C 25 82.076638746075, 50 82.15327749215001, 75 82L 75 82 C 50 80.81898918923066, 25 81.40949459461532, 0 82 Z"></path>
+                                            <path class="graph-line--range-fill--dark"
+                                                  d=" M 0 82 C 25 80.82402148990936, 50 79.64804297981871, 75 82L 75 82 C 50 82.15327749215001, 25 82.076638746075, 0 82 Z"></path>
+                                            <path class="graph-line--range-fill--dark"
+                                                  d=" M 75 82 C 100 81.84672250784999, 125 81.46352877747493, 150 82L 150 82 C 125 86.13353783769271, 100 83.18101081076934, 75 82 Z"></path>
+                                            <path class="graph-line--range-fill--dark"
+                                                  d=" M 75 82 C 100 84.35195702018129, 125 90.23184957063451, 150 93L 150 82 C 125 81.46352877747493, 100 81.84672250784999, 75 82 Z"></path>
+                                            <path class="graph-line--range-fill--dark"
+                                                  d=" M 150 82 C 175 82.53647122252507, 200.00000000000003 83.9926073979503, 225 82L 225 60 C 200.00000000000003 66.64685945999847, 175 77.86646216230729, 150 82 Z"></path>
+                                            <path class="graph-line--range-fill--dark"
+                                                  d=" M 150 93 C 175 95.76815042936549, 200.00000000000003 95.42455873764327, 225 93L 225 82 C 200.00000000000003 83.9926073979503, 175 82.53647122252507, 150 82 Z"></path>
+                                            <path class="graph-line--range-fill--dark"
+                                                  d=" M 225 82 C 249.99999999999997 80.0073926020497, 275 74.56604163072393, 300 71L 300 49 C 275 51.279024322313376, 249.99999999999997 53.35314054000153, 225 60 Z"></path>
+                                            <path class="graph-line--range-fill--dark"
+                                                  d=" M 225 93 C 249.99999999999997 90.57544126235673, 275 86.0699154787924, 300 82L 300 71 C 275 74.56604163072393, 249.99999999999997 80.0073926020497, 225 82 Z"></path>
+                                            <path class="graph-line--range-fill--dark"
+                                                  d=" M 300 71 C 325 67.43395836927607, 350 65.74322607915398, 375 71L 375 49 C 350 44.237043250748016, 325 46.720975677686624, 300 49 Z"></path>
+                                            <path class="graph-line--range-fill--dark"
+                                                  d=" M 300 82 C 325 77.9300845212076, 350 74.29577934718712, 375 82L 375 71 C 350 65.74322607915398, 325 67.43395836927607, 300 71 Z"></path>
+                                            <path class="graph-line--range-fill--dark"
+                                                  d=" M 375 71 C 400 76.25677392084602, 425.00000000000006 88.46105405266013, 450 93L 450 71 C 425.00000000000006 65.77280267469462, 400 53.762956749251984, 375 49 Z"></path>
+                                            <path class="graph-line--range-fill--dark"
+                                                  d=" M 375 82 C 400 89.70422065281288, 425.00000000000006 108.74696713245908, 450 115L 450 93 C 425.00000000000006 88.46105405266013, 400 76.25677392084602, 375 71 Z"></path>
+                                            <path class="graph-line--range-fill--dark"
+                                                  d=" M 450 93 C 474.99999999999994 97.53894594733987, 500 94.4125577102055, 525 93L 525 71 C 500 74.67174605047352, 474.99999999999994 76.22719732530538, 450 71 Z"></path>
+                                            <path class="graph-line--range-fill--dark"
+                                                  d=" M 450 115 C 474.99999999999994 121.25303286754092, 500 114.71635212297655, 525 115L 525 93 C 500 94.4125577102055, 474.99999999999994 97.53894594733987, 450 93 Z"></path>
+                                            <path class="graph-line--range-fill--dark"
+                                                  d=" M 525 93 C 550 91.5874422897945, 575.0000000000001 91.88871510651785, 600 93L 600 60 C 575.0000000000001 61.540213123411235, 550 67.32825394952648, 525 71 Z"></path>
+                                            <path class="graph-line--range-fill--dark"
+                                                  d=" M 525 115 C 550 115.28364787702345, 575.0000000000001 122.38762437563472, 600 126L 600 93 C 575.0000000000001 91.88871510651785, 550 91.5874422897945, 525 93 Z"></path>
+                                            <path class="graph-line--range-fill--dark"
+                                                  d=" M 600 93 C 624.9999999999999 94.11128489348215, 650 96.03258186372312, 675 93L 675 60 C 650 61.1674014558815, 624.9999999999999 58.459786876588765, 600 60 Z"></path>
+                                            <path class="graph-line--range-fill--dark"
+                                                  d=" M 600 126 C 624.9999999999999 129.61237562436528, 650 129.73315037448464, 675 126L 675 93 C 650 96.03258186372312, 624.9999999999999 94.11128489348215, 600 93 Z"></path>
+                                            <path class="graph-line--range-fill--dark"
+                                                  d=" M 675 93 C 700 89.96741813627688, 725 81.98095743858967, 750 82L 750 49 C 725 53.790181053062696, 700 58.8325985441185, 675 60 Z"></path>
+                                            <path class="graph-line--range-fill--dark"
+                                                  d=" M 675 126 C 700 122.26684962551538, 725 114.6797741264268, 750 115L 750 82 C 725 81.98095743858967, 700 89.96741813627688, 675 93 Z"></path>
+                                            <path class="graph-line--range-fill--dark"
+                                                  d=" M 750 82 C 775 82.01904256141033, 800 90.04358838191817, 825 93L 825 38 C 800 39.67187433186774, 775 44.209818946937304, 750 49 Z"></path>
+                                            <path class="graph-line--range-fill--dark"
+                                                  d=" M 750 115 C 775 115.3202258735732, 800 123.54775311980816, 825 126L 825 93 C 800 90.04358838191817, 775 82.01904256141033, 750 82 Z"></path>
+                                            <path class="graph-line--range-fill--dark"
+                                                  d=" M 825 93 C 850 95.95641161808183, 875 93.84468903373765, 900 93L 900 38 C 875 37.52232161946637, 850 36.32812566813226, 825 38 Z"></path>
+                                            <path class="graph-line--range-fill--dark"
+                                                  d=" M 825 126 C 850 128.45224688019184, 875 125.12921339434052, 900 126L 900 93 C 875 93.84468903373765, 850 95.95641161808183, 825 93 Z"></path>
+                                            <path class="graph-line--range-fill--dark"
+                                                  d=" M 900 93 C 925 92.15531096626235, 950 92.57765548313117, 975 93L 975 38 C 950 38.238839190266816, 925 38.47767838053363, 900 38 Z"></path>
+                                            <path class="graph-line--range-fill--dark"
+                                                  d=" M 900 126 C 925 126.87078660565948, 950 131.93539330282974, 975 137L 975 93 C 950 92.57765548313117, 925 92.15531096626235, 900 93 Z"></path>
+                                            <path class="graph-line--range-fill--dark" d=""></path>
+                                            <path class="graph-line--range-fill--dark" d=""></path>
+                                            <path class="graph-line--normal"
+                                                  d="M 0 36.67999999999998 C 25 37.0805144571267, 50 37.48102891425336, 75 37.890000000000015"></path>
+                                            <path class="graph-line--normal"
+                                                  d="M 75 37.890000000000015 C 100 38.29897108574667, 125 38.71639880011341, 150 39.099999999999994"></path>
+                                            <path class="graph-line--normal"
+                                                  d="M 150 39.099999999999994 C 175 39.48360119988658, 200.00000000000003 39.83337588529312, 225 40.19999999999999"></path>
+                                            <path class="graph-line--normal"
+                                                  d="M 225 40.19999999999999 C 249.99999999999997 40.566624114706855, 275 40.95009765871413, 300 41.30000000000001"></path>
+                                            <path class="graph-line--normal"
+                                                  d="M 300 41.30000000000001 C 325 41.649902341285895, 350 41.96623347985047, 375 42.290000000000006"></path>
+                                            <path class="graph-line--normal"
+                                                  d="M 375 42.290000000000006 C 400 42.613766520149554, 425.00000000000006 42.94496842188413, 450 43.28"></path>
+                                            <path class="graph-line--normal"
+                                                  d="M 450 43.28 C 474.99999999999994 43.615031578115875, 500 43.953892832612965, 525 44.27000000000001"></path>
+                                            <path class="graph-line--normal"
+                                                  d="M 525 44.27000000000001 C 550 44.586107167387055, 575.0000000000001 44.87946024766404, 600 45.150000000000006"></path>
+                                            <path class="graph-line--normal"
+                                                  d="M 600 45.150000000000006 C 624.9999999999999 45.42053975233597, 650 45.668266176730896, 675 45.91999999999999"></path>
+                                            <path class="graph-line--normal"
+                                                  d="M 675 45.91999999999999 C 700 46.17173382326908, 725 46.42747504541232, 750 46.69"></path>
+                                            <path class="graph-line--normal"
+                                                  d="M 750 46.69 C 775 46.95252495458767, 800 47.22183364161977, 825 47.459999999999994"></path>
+                                            <path class="graph-line--normal"
+                                                  d="M 825 47.459999999999994 C 850 47.69816635838022, 875 47.905190388108636, 900 48.120000000000005"></path>
+                                            <path class="graph-line--normal"
+                                                  d="M 900 48.120000000000005 C 925 48.33480961189137, 950 48.55740480594568, 975 48.78"></path>
+                                            <path class="graph-line--dark"
+                                                  d="M 0 82 C 25 82.076638746075, 50 82.15327749215001, 75 82"></path>
+                                            <path class="graph-line--dark"
+                                                  d="M 75 82 C 100 81.84672250784999, 125 81.46352877747493, 150 82"></path>
+                                            <path class="graph-line--dark"
+                                                  d="M 150 82 C 175 82.53647122252507, 200.00000000000003 83.9926073979503, 225 82"></path>
+                                            <path class="graph-line--dark"
+                                                  d="M 225 82 C 249.99999999999997 80.0073926020497, 275 74.56604163072393, 300 71"></path>
+                                            <path class="graph-line--dark"
+                                                  d="M 300 71 C 325 67.43395836927607, 350 65.74322607915398, 375 71"></path>
+                                            <path class="graph-line--dark"
+                                                  d="M 375 71 C 400 76.25677392084602, 425.00000000000006 88.46105405266013, 450 93"></path>
+                                            <path class="graph-line--dark"
+                                                  d="M 450 93 C 474.99999999999994 97.53894594733987, 500 94.4125577102055, 525 93"></path>
+                                            <path class="graph-line--dark"
+                                                  d="M 525 93 C 550 91.5874422897945, 575.0000000000001 91.88871510651785, 600 93"></path>
+                                            <path class="graph-line--dark"
+                                                  d="M 600 93 C 624.9999999999999 94.11128489348215, 650 96.03258186372312, 675 93"></path>
+                                            <path class="graph-line--dark"
+                                                  d="M 675 93 C 700 89.96741813627688, 725 81.98095743858967, 750 82"></path>
+                                            <path class="graph-line--dark"
+                                                  d="M 750 82 C 775 82.01904256141033, 800 90.04358838191817, 825 93"></path>
+                                            <path class="graph-line--dark"
+                                                  d="M 825 93 C 850 95.95641161808183, 875 93.84468903373765, 900 93"></path>
+                                            <path class="graph-line--dark"
+                                                  d="M 900 93 C 925 92.15531096626235, 950 92.57765548313117, 975 93"></path>
+                                            <g transform="translate(0, 82)"><circle class="fill--livid" r="5" cx="0" cy="0"></circle></g>
+                                            <text transform="translate(-6, 70)"
+                                                  class="fill--livid text-size--normal">3°</text>
+                                            <g transform="translate(75, 82)"><circle class="fill--livid" r="5" cx="0" cy="0"></circle></g>
+                                            <text transform="translate(69, 70)"
+                                                  class="fill--livid text-size--normal">3°</text>
+                                            <g transform="translate(150, 82)"><circle class="fill--livid" r="5" cx="0" cy="0"></circle></g>
+                                            <text transform="translate(144, 70)" class="fill--livid text-size--normal">3°</text>
+                                            <g transform="translate(225, 82)"><circle class="fill--livid" r="5" cx="0" cy="0"></circle></g>
+                                            <text transform="translate(219, 70)" class="fill--livid text-size--normal">3°</text>
+                                            <g transform="translate(300, 71)"><circle class="fill--livid" r="5" cx="0" cy="0"></circle></g>
+                                            <text transform="translate(294, 59)" class="fill--livid text-size--normal">4°</text>
+                                            <g transform="translate(375, 71)"><circle class="fill--livid" r="5" cx="0" cy="0"></circle></g>
+                                            <text transform="translate(369, 59)" class="fill--livid text-size--normal">4°</text>
+                                            <g transform="translate(450, 93)"><circle class="fill--livid" r="5" cx="0" cy="0"></circle></g>
+                                            <text transform="translate(444, 81)" class="fill--livid text-size--normal">2°</text>
+                                            <g transform="translate(525, 93)"><circle class="fill--livid" r="5" cx="0" cy="0"></circle></g>
+                                            <text transform="translate(519, 81)" class="fill--livid text-size--normal">2°</text>
+                                            <g transform="translate(600, 93)"><circle class="fill--livid" r="5" cx="0" cy="0"></circle></g>
+                                            <text transform="translate(594, 81)" class="fill--livid text-size--normal">2°</text>
+                                            <g transform="translate(675, 93)"><circle class="fill--livid" r="5" cx="0" cy="0"></circle></g>
+                                            <text transform="translate(669, 81)" class="fill--livid text-size--normal">2°</text>
+                                            <g transform="translate(750, 82)"><circle class="fill--livid" r="5" cx="0" cy="0"></circle></g>
+                                            <text transform="translate(744, 70)" class="fill--livid text-size--normal">3°</text>
+                                            <g transform="translate(825, 93)"><circle class="fill--livid" r="5" cx="0" cy="0"></circle></g>
+                                            <text transform="translate(819, 81)" class="fill--livid text-size--normal">2°</text>
+                                            <g transform="translate(900, 93)"><circle class="fill--livid" r="5" cx="0" cy="0"></circle></g>
+                                            <text transform="translate(894, 81)" class="fill--livid text-size--normal">2°</text>
+                                            <g transform="translate(975, 93)"><circle class="fill--livid" r="5" cx="0" cy="0"></circle></g>
+                                            <text transform="translate(969, 81)" class="fill--livid text-size--normal">2°</text></g><g
+                                                transform="translate(100, 220)"><g transform="translate(-25, -10)"><g class="wwbox"><title>Betrokken met lichte regen bij tussenpozen.</title><image
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50"
+                                                xlink:href="/frontend/img/icons/weather/small/731.svg"></image></g></g>
+                                            <g transform="translate(50, -10)"><g class="wwbox"><title>Betrokken maar droog weer.</title><image
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50"
+                                                    xlink:href="/frontend/img/icons/weather/small/700.svg"></image></g></g>
+                                            <g transform="translate(125, -10)"><g class="wwbox"><title>Betrokken maar droog weer.</title><image
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50"
+                                                    xlink:href="/frontend/img/icons/weather/small/700.svg"></image></g></g>
+                                            <g transform="translate(200, -10)"><g class="wwbox"><title>Betrokken met lichte regen bij tussenpozen.</title><image
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50"
+                                                    xlink:href="/frontend/img/icons/weather/small/731.svg"></image></g></g>
+                                            <g transform="translate(275, -10)"><g class="wwbox"><title>Bewolkt maar droog weer.</title><image
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50"
+                                                    xlink:href="/frontend/img/icons/weather/small/500.svg"></image></g></g>
+                                            <g transform="translate(350, -10)"><g class="wwbox"><title>Deels bewolkt en droog weer.</title><image
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50"
+                                                    xlink:href="/frontend/img/icons/weather/small/500.svg"></image></g></g>
+                                            <g transform="translate(425, -10)"><g class="wwbox"><title>Deels bewolkt en droog weer.</title><image
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50"
+                                                    xlink:href="/frontend/img/icons/weather/small/500.svg"></image></g></g>
+                                            <g transform="translate(500, -10)"><g class="wwbox"><title>Wisselend bewolkt met een enkele lichte regenbui.</title><image
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50"
+                                                    xlink:href="/frontend/img/icons/weather/small/561.svg"></image></g></g>
+                                            <g transform="translate(575, -10)"><g class="wwbox"><title>Wisselend bewolkt met een enkele lichte regenbui.</title><image
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50"
+                                                    xlink:href="/frontend/img/icons/weather/small/561.svg"></image></g></g>
+                                            <g transform="translate(650, -10)"><g class="wwbox"><title>Wisselend bewolkt met een enkele lichte regenbui.</title><image
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50"
+                                                    xlink:href="/frontend/img/icons/weather/small/561.svg"></image></g></g>
+                                            <g transform="translate(725, -10)"><g class="wwbox"><title>Wisselend bewolkt met een enkele lichte regenbui.</title><image
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50"
+                                                    xlink:href="/frontend/img/icons/weather/small/561.svg"></image></g></g>
+                                            <g transform="translate(800, -10)"><g class="wwbox"><title>Wisselend bewolkt met een enkele lichte regenbui.</title><image
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50"
+                                                    xlink:href="/frontend/img/icons/weather/small/561.svg"></image></g></g>
+                                            <g transform="translate(875, -10)"><g class="wwbox"><title>Wisselend bewolkt met een enkele lichte regenbui.</title><image
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50"
+                                                    xlink:href="/frontend/img/icons/weather/small/561.svg"></image></g></g>
+                                            <g transform="translate(950, -10)"><g class="wwbox"><title>Wisselend bewolkt met een enkele lichte regenbui.</title><image
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50"
+                                                    xlink:href="/frontend/img/icons/weather/small/561.svg"></image></g></g></g><g
+                                                transform="translate(0,295)"><g transform="translate(105,0)"><g transform="translate(0,40)"><rect width="60" height="30" style="stroke-width: 1; stroke:rgb(169,169,169);fill:rgba(0,0,0,0);"></rect><circle
+                                                cx="30" cy="15" r="5" class="fill--livid"></circle></g><g
+                                                transform="translate(75, 60)"><text class="text-size--normal">Voorspelling (°)</text></g></g>
+                                            <g transform="translate(420,0)"><g transform="translate(0,40)"><rect width="60" height="30" style="stroke-width: 1; stroke:rgb(169,169,169);" class="graph-line--range-fill--dark"></rect></g>
+                                                <g transform="translate(75, 60)"><text class="text-size--normal">Spreiding van de voorspelling (°)</text></g></g>
+                                            <g transform="translate(787.5,0)"><g transform="translate(0,57)"><path class="graph-line--normal" d="M 0 0, 60 0"></path></g>
+                                                <g transform="translate(75, 60)"><text class="text-size--normal">Klimatologisch gemiddelde (°)</text></g></g></g></svg>
+                                    </forecast-days-item>
+                                    <forecast-days-item type="temperature-min" icon="temperature"
+                                                        title="Minimumtemperatuur">
+                                        <svg class="kmi-svg" version="1.1" x="0px" y="0px" preserveAspectRatio="xMinYMin meet" viewBox="0 0 1150 370" xml:space="preserve">
+
+
+
+
+
+
+
+<style type="text/css">
+         g.wwbox text {
+             display: none;
+         }
+
+         g.wwbox:hover text {
+             display: block;
+         }
+</style><title>Minimum temperatuur</title><g transform="translate(100, 220)"><g transform="translate(-25, -10)"><text class="fill--livid text-size--normal" transform="translate(16, 70)">vr</text><text
+                                                class="fill--livid text-size--normal"
+                                                transform="translate(4, 90)">02/12</text></g>
+                                            <g transform="translate(50, -10)"><rect class="fill--weekend" x="-12.5" y="-184" width="75" height="180"></rect>
+                                                <text class="fill--livid text-size--normal"
+                                                      transform="translate(16, 70)">za</text>
+                                                <text class="fill--livid text-size--normal"
+                                                      transform="translate(4, 90)">03/12</text></g>
+                                            <g transform="translate(125, -10)"><rect class="fill--weekend" x="-12.5" y="-184" width="75" height="180"></rect>
+                                                <text class="fill--livid text-size--normal"
+                                                      transform="translate(16, 70)">zo</text>
+                                                <text class="fill--livid text-size--normal"
+                                                      transform="translate(4, 90)">04/12</text></g>
+                                            <g transform="translate(200, -10)"><text class="fill--livid text-size--normal" transform="translate(16, 70)">ma</text>
+                                                <text class="fill--livid text-size--normal"
+                                                      transform="translate(4, 90)">05/12</text></g>
+                                            <g transform="translate(275, -10)"><text class="fill--livid text-size--normal" transform="translate(16, 70)">di</text>
+                                                <text class="fill--livid text-size--normal"
+                                                      transform="translate(4, 90)">06/12</text></g>
+                                            <g transform="translate(350, -10)"><text class="fill--livid text-size--normal" transform="translate(16, 70)">wo</text>
+                                                <text class="fill--livid text-size--normal"
+                                                      transform="translate(4, 90)">07/12</text></g>
+                                            <g transform="translate(425, -10)"><text class="fill--livid text-size--normal" transform="translate(16, 70)">do</text>
+                                                <text class="fill--livid text-size--normal"
+                                                      transform="translate(4, 90)">08/12</text></g>
+                                            <g transform="translate(500, -10)"><text class="fill--livid text-size--normal" transform="translate(16, 70)">vr</text>
+                                                <text class="fill--livid text-size--normal"
+                                                      transform="translate(4, 90)">09/12</text></g>
+                                            <g transform="translate(575, -10)"><rect class="fill--weekend" x="-12.5" y="-184" width="75" height="180"></rect>
+                                                <text class="fill--livid text-size--normal"
+                                                      transform="translate(16, 70)">za</text>
+                                                <text class="fill--livid text-size--normal"
+                                                      transform="translate(4, 90)">10/12</text></g>
+                                            <g transform="translate(650, -10)"><rect class="fill--weekend" x="-12.5" y="-184" width="75" height="180"></rect>
+                                                <text class="fill--livid text-size--normal"
+                                                      transform="translate(16, 70)">zo</text>
+                                                <text class="fill--livid text-size--normal"
+                                                      transform="translate(4, 90)">11/12</text></g>
+                                            <g transform="translate(725, -10)"><text class="fill--livid text-size--normal" transform="translate(16, 70)">ma</text>
+                                                <text class="fill--livid text-size--normal"
+                                                      transform="translate(4, 90)">12/12</text></g>
+                                            <g transform="translate(800, -10)"><text class="fill--livid text-size--normal" transform="translate(16, 70)">di</text>
+                                                <text class="fill--livid text-size--normal"
+                                                      transform="translate(4, 90)">13/12</text></g>
+                                            <g transform="translate(875, -10)"><text class="fill--livid text-size--normal" transform="translate(16, 70)">wo</text>
+                                                <text class="fill--livid text-size--normal"
+                                                      transform="translate(4, 90)">14/12</text></g>
+                                            <g transform="translate(950, -10)"><text class="fill--livid text-size--normal" transform="translate(16, 70)">do</text>
+                                                <text class="fill--livid text-size--normal"
+                                                      transform="translate(4, 90)">15/12</text></g></g><g
+                                                transform="translate(10, -55)"><g transform="translate(0,260)"><text transform="translate(20,3)" class="fill--livid text-size--normal">-10 °</text><line
+                                                class="guide-line" x1="70" y1="0" x2="1090" y2="0"></line></g>
+                                            <g transform="translate(0,215)"><text transform="translate(20,3)" class="fill--livid text-size--normal">-5 °</text>
+                                                <line class="guide-line" x1="70" y1="0" x2="1090" y2="0"></line></g>
+                                            <g transform="translate(0,170)"><text transform="translate(27,3)" class="fill--livid text-size--normal">0 °</text>
+                                                <line class="guide-line" x1="70" y1="0" x2="1090" y2="0"></line></g>
+                                            <g transform="translate(0,125)"><text transform="translate(27,3)" class="fill--livid text-size--normal">5 °</text>
+                                                <line class="guide-line" x1="70" y1="0" x2="1090" y2="0"></line></g>
+                                            <g transform="translate(0,80)"><text transform="translate(20,3)" class="fill--livid text-size--normal">10 °</text>
+                                                <line class="guide-line" x1="70" y1="0" x2="1090" y2="0"></line></g></g><g
+                                                id="graph-group" transform="translate(100, 35)"><path class="graph-line--range-fill" d=""></path>
+                                            <path class="graph-line--range-fill" d=""></path>
+                                            <path class="graph-line--range-fill"
+                                                  d=" M 75 71 C 100 60.739882075198835, 125 84.58958726319592, 150 89L 150 71 C 125 70.06020783620055, 100 56.58863081034302, 75 71 Z"></path>
+                                            <path class="graph-line--range-fill"
+                                                  d=" M 75 71 C 100 60.67105561093793, 125 84.34869463828272, 150 89L 150 89 C 125 84.58958726319592, 100 60.739882075198835, 75 71 Z"></path>
+                                            <path class="graph-line--range-fill"
+                                                  d=" M 150 89 C 175 93.41041273680408, 200.00000000000003 78.38153302241517, 225 71L 225 53 C 200.00000000000003 60.3477994655408, 175 71.93979216379945, 150 71 Z"></path>
+                                            <path class="graph-line--range-fill"
+                                                  d=" M 150 89 C 175 93.65130536171728, 200.00000000000003 79.27627705780709, 225 71L 225 71 C 200.00000000000003 78.38153302241517, 175 93.41041273680408, 150 89 Z"></path>
+                                            <path class="graph-line--range-fill"
+                                                  d=" M 225 71 C 249.99999999999997 63.61846697758483, 275 63.88428064714341, 300 62L 300 44 C 275 42.548594301636214, 249.99999999999997 45.6522005344592, 225 53 Z"></path>
+                                            <path class="graph-line--range-fill"
+                                                  d=" M 225 71 C 249.99999999999997 62.72372294219291, 275 60.54619713048888, 300 62L 300 62 C 275 63.88428064714341, 249.99999999999997 63.61846697758483, 225 71 Z"></path>
+                                            <path class="graph-line--range-fill"
+                                                  d=" M 300 62 C 325 60.11571935285659, 350 56.081344389011235, 375 62L 375 53 C 350 51.4578233279143, 325 45.451405698363786, 300 44 Z"></path>
+                                            <path class="graph-line--range-fill"
+                                                  d=" M 300 62 C 325 63.45380286951112, 350 68.53893442023738, 375 80L 375 62 C 350 56.081344389011235, 325 60.11571935285659, 300 62 Z"></path>
+                                            <path class="graph-line--range-fill"
+                                                  d=" M 375 62 C 400 67.91865561098876, 425.00000000000006 83.79034179681169, 450 89L 450 53 C 425.00000000000006 51.620112386706495, 400 54.5421766720857, 375 53 Z"></path>
+                                            <path class="graph-line--range-fill"
+                                                  d=" M 375 80 C 400 91.46106557976262, 425.00000000000006 109.29806518856158, 450 116L 450 89 C 425.00000000000006 83.79034179681169, 400 67.91865561098876, 375 62 Z"></path>
+                                            <path class="graph-line--range-fill"
+                                                  d=" M 450 89 C 474.99999999999994 94.20965820318831, 500 88.75728842374205, 525 89L 525 62 C 500 60.06172712525971, 474.99999999999994 54.379887613293505, 450 53 Z"></path>
+                                            <path class="graph-line--range-fill"
+                                                  d=" M 450 116 C 474.99999999999994 122.70193481143842, 500 118.26880482551631, 525 116L 525 89 C 500 88.75728842374205, 474.99999999999994 94.20965820318831, 450 89 Z"></path>
+                                            <path class="graph-line--range-fill"
+                                                  d=" M 525 89 C 550 89.24271157625795, 575.0000000000001 95.18050450822012, 600 98L 600 62 C 575.0000000000001 62.13297911225462, 550 63.93827287474029, 525 62 Z"></path>
+                                            <path class="graph-line--range-fill"
+                                                  d=" M 525 116 C 550 113.73119517448369, 575.0000000000001 113.62671550937313, 600 116L 600 98 C 575.0000000000001 95.18050450822012, 550 89.24271157625795, 525 89 Z"></path>
+                                            <path class="graph-line--range-fill"
+                                                  d=" M 600 98 C 624.9999999999999 100.81949549177988, 650 100.52069354337749, 675 98L 675 62 C 650 63.40635642572184, 624.9999999999999 61.86702088774538, 600 62 Z"></path>
+                                            <path class="graph-line--range-fill"
+                                                  d=" M 600 116 C 624.9999999999999 118.37328449062687, 650 123.22433313699118, 675 125L 675 98 C 650 100.52069354337749, 624.9999999999999 100.81949549177988, 600 98 Z"></path>
+                                            <path class="graph-line--range-fill"
+                                                  d=" M 675 98 C 700 95.47930645662251, 725 90.73672131826996, 750 89L 750 53 C 725 56.241595184858056, 700 60.59364357427816, 675 62 Z"></path>
+                                            <path class="graph-line--range-fill"
+                                                  d=" M 675 125 C 700 126.77566686300882, 725 125.47595194266216, 750 125L 750 89 C 725 90.73672131826996, 700 95.47930645662251, 675 98 Z"></path>
+                                            <path class="graph-line--range-fill"
+                                                  d=" M 750 89 C 775 87.26327868173004, 800 88.5324211835427, 825 89L 825 44 C 800 47.62726283484591, 775 49.758404815141944, 750 53 Z"></path>
+                                            <path class="graph-line--range-fill"
+                                                  d=" M 750 125 C 775 124.52404805733784, 800 124.87185909236018, 825 125L 825 89 C 800 88.5324211835427, 775 87.26327868173004, 750 89 Z"></path>
+                                            <path class="graph-line--range-fill"
+                                                  d=" M 825 89 C 850 89.4675788164573, 875 89.13359394755923, 900 89L 900 35 C 875 35.24935347575831, 850 40.37273716515409, 825 44 Z"></path>
+                                            <path class="graph-line--range-fill"
+                                                  d=" M 825 125 C 850 125.12814090763982, 875 125.03661168789709, 900 125L 900 89 C 875 89.13359394755923, 850 89.4675788164573, 825 89 Z"></path>
+                                            <path class="graph-line--range-fill"
+                                                  d=" M 900 89 C 925 88.86640605244077, 950 88.93320302622038, 975 89L 975 44 C 950 39.375323262120844, 925 34.75064652424169, 900 35 Z"></path>
+                                            <path class="graph-line--range-fill"
+                                                  d=" M 900 125 C 925 124.96338831210291, 950 124.98169415605145, 975 125L 975 89 C 950 88.93320302622038, 925 88.86640605244077, 900 89 Z"></path>
+                                            <path class="graph-line--range-fill" d=""></path>
+                                            <path class="graph-line--range-fill" d=""></path>
+                                            <path class="graph-line--normal"
+                                                  d="M 0 59.3 C 25 59.54058003150712, 50 59.78116006301427, 75 60.019999999999996"></path>
+                                            <path class="graph-line--normal"
+                                                  d="M 75 60.019999999999996 C 100 60.25883993698572, 125 60.495939779450055, 150 60.739999999999995"></path>
+                                            <path class="graph-line--normal"
+                                                  d="M 150 60.739999999999995 C 175 60.984060220549935, 200.00000000000003 61.23508081918541, 225 61.459999999999994"></path>
+                                            <path class="graph-line--normal"
+                                                  d="M 225 61.459999999999994 C 249.99999999999997 61.684919180814575, 275 61.883736943808316, 300 62.09"></path>
+                                            <path class="graph-line--normal"
+                                                  d="M 300 62.09 C 325 62.29626305619169, 350 62.50997140558138, 375 62.72"></path>
+                                            <path class="graph-line--normal"
+                                                  d="M 375 62.72 C 400 62.930028594418616, 425.00000000000006 63.136377433866144, 450 63.35000000000001"></path>
+                                            <path class="graph-line--normal"
+                                                  d="M 450 63.35000000000001 C 474.99999999999994 63.56362256613387, 500 63.78451885895416, 525 63.980000000000004"></path>
+                                            <path class="graph-line--normal"
+                                                  d="M 525 63.980000000000004 C 550 64.17548114104585, 575.0000000000001 64.34554713031723, 600 64.52"></path>
+                                            <path class="graph-line--normal"
+                                                  d="M 600 64.52 C 624.9999999999999 64.69445286968276, 650 64.87329261977686, 675 65.06"></path>
+                                            <path class="graph-line--normal"
+                                                  d="M 675 65.06 C 700 65.24670738022314, 725 65.4412823905753, 750 65.60000000000001"></path>
+                                            <path class="graph-line--normal"
+                                                  d="M 750 65.60000000000001 C 775 65.75871760942472, 800 65.88157781792204, 825 66.05"></path>
+                                            <path class="graph-line--normal"
+                                                  d="M 825 66.05 C 850 66.21842218207796, 875 66.43240633773654, 900 66.59"></path>
+                                            <path class="graph-line--normal"
+                                                  d="M 900 66.59 C 925 66.74759366226347, 950 66.84879683113174, 975 66.95"></path>
+                                            <path class="graph-line"
+                                                  d="M 75 71 C 100 60.739882075198835, 125 84.58958726319592, 150 89"></path>
+                                            <path class="graph-line"
+                                                  d="M 150 89 C 175 93.41041273680408, 200.00000000000003 78.38153302241517, 225 71"></path>
+                                            <path class="graph-line"
+                                                  d="M 225 71 C 249.99999999999997 63.61846697758483, 275 63.88428064714341, 300 62"></path>
+                                            <path class="graph-line"
+                                                  d="M 300 62 C 325 60.11571935285659, 350 56.081344389011235, 375 62"></path>
+                                            <path class="graph-line"
+                                                  d="M 375 62 C 400 67.91865561098876, 425.00000000000006 83.79034179681169, 450 89"></path>
+                                            <path class="graph-line"
+                                                  d="M 450 89 C 474.99999999999994 94.20965820318831, 500 88.75728842374205, 525 89"></path>
+                                            <path class="graph-line"
+                                                  d="M 525 89 C 550 89.24271157625795, 575.0000000000001 95.18050450822012, 600 98"></path>
+                                            <path class="graph-line"
+                                                  d="M 600 98 C 624.9999999999999 100.81949549177988, 650 100.52069354337749, 675 98"></path>
+                                            <path class="graph-line"
+                                                  d="M 675 98 C 700 95.47930645662251, 725 90.73672131826996, 750 89"></path>
+                                            <path class="graph-line"
+                                                  d="M 750 89 C 775 87.26327868173004, 800 88.5324211835427, 825 89"></path>
+                                            <path class="graph-line"
+                                                  d="M 825 89 C 850 89.4675788164573, 875 89.13359394755923, 900 89"></path>
+                                            <path class="graph-line"
+                                                  d="M 900 89 C 925 88.86640605244077, 950 88.93320302622038, 975 89"></path>
+                                            <g transform="translate(75, 71)"><circle class="fill--blue" r="5" cx="0" cy="0"></circle></g>
+                                            <text transform="translate(69, 59)"
+                                                  class="fill--livid text-size--normal">1°</text>
+                                            <g transform="translate(150, 89)"><circle class="fill--blue" r="5" cx="0" cy="0"></circle></g>
+                                            <text transform="translate(140, 77)" class="fill--livid text-size--normal">-1°</text>
+                                            <g transform="translate(225, 71)"><circle class="fill--blue" r="5" cx="0" cy="0"></circle></g>
+                                            <text transform="translate(219, 59)" class="fill--livid text-size--normal">1°</text>
+                                            <g transform="translate(300, 62)"><circle class="fill--blue" r="5" cx="0" cy="0"></circle></g>
+                                            <text transform="translate(294, 50)" class="fill--livid text-size--normal">2°</text>
+                                            <g transform="translate(375, 62)"><circle class="fill--blue" r="5" cx="0" cy="0"></circle></g>
+                                            <text transform="translate(369, 50)" class="fill--livid text-size--normal">2°</text>
+                                            <g transform="translate(450, 89)"><circle class="fill--blue" r="5" cx="0" cy="0"></circle></g>
+                                            <text transform="translate(440, 77)" class="fill--livid text-size--normal">-1°</text>
+                                            <g transform="translate(525, 89)"><circle class="fill--blue" r="5" cx="0" cy="0"></circle></g>
+                                            <text transform="translate(515, 77)" class="fill--livid text-size--normal">-1°</text>
+                                            <g transform="translate(600, 98)"><circle class="fill--blue" r="5" cx="0" cy="0"></circle></g>
+                                            <text transform="translate(590, 86)" class="fill--livid text-size--normal">-2°</text>
+                                            <g transform="translate(675, 98)"><circle class="fill--blue" r="5" cx="0" cy="0"></circle></g>
+                                            <text transform="translate(665, 86)" class="fill--livid text-size--normal">-2°</text>
+                                            <g transform="translate(750, 89)"><circle class="fill--blue" r="5" cx="0" cy="0"></circle></g>
+                                            <text transform="translate(740, 77)" class="fill--livid text-size--normal">-1°</text>
+                                            <g transform="translate(825, 89)"><circle class="fill--blue" r="5" cx="0" cy="0"></circle></g>
+                                            <text transform="translate(815, 77)" class="fill--livid text-size--normal">-1°</text>
+                                            <g transform="translate(900, 89)"><circle class="fill--blue" r="5" cx="0" cy="0"></circle></g>
+                                            <text transform="translate(890, 77)" class="fill--livid text-size--normal">-1°</text>
+                                            <g transform="translate(975, 89)"><circle class="fill--blue" r="5" cx="0" cy="0"></circle></g>
+                                            <text transform="translate(965, 77)" class="fill--livid text-size--normal">-1°</text></g><g
+                                                transform="translate(100, 220)"><g transform="translate(-25, -10)"><g class="wwbox"><title>Betrokken met lichte regen bij tussenpozen.</title><image
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50"
+                                                xlink:href="/frontend/img/icons/weather/small/731.svg"></image></g></g>
+                                            <g transform="translate(50, -10)"><g class="wwbox"><title>Betrokken maar droog weer.</title><image
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50"
+                                                    xlink:href="/frontend/img/icons/weather/small/700.svg"></image></g></g>
+                                            <g transform="translate(125, -10)"><g class="wwbox"><title>Betrokken maar droog weer.</title><image
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50"
+                                                    xlink:href="/frontend/img/icons/weather/small/700.svg"></image></g></g>
+                                            <g transform="translate(200, -10)"><g class="wwbox"><title>Betrokken met lichte regen bij tussenpozen.</title><image
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50"
+                                                    xlink:href="/frontend/img/icons/weather/small/731.svg"></image></g></g>
+                                            <g transform="translate(275, -10)"><g class="wwbox"><title>Bewolkt maar droog weer.</title><image
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50"
+                                                    xlink:href="/frontend/img/icons/weather/small/500.svg"></image></g></g>
+                                            <g transform="translate(350, -10)"><g class="wwbox"><title>Deels bewolkt en droog weer.</title><image
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50"
+                                                    xlink:href="/frontend/img/icons/weather/small/500.svg"></image></g></g>
+                                            <g transform="translate(425, -10)"><g class="wwbox"><title>Deels bewolkt en droog weer.</title><image
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50"
+                                                    xlink:href="/frontend/img/icons/weather/small/500.svg"></image></g></g>
+                                            <g transform="translate(500, -10)"><g class="wwbox"><title>Wisselend bewolkt met een enkele lichte regenbui.</title><image
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50"
+                                                    xlink:href="/frontend/img/icons/weather/small/561.svg"></image></g></g>
+                                            <g transform="translate(575, -10)"><g class="wwbox"><title>Wisselend bewolkt met een enkele lichte regenbui.</title><image
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50"
+                                                    xlink:href="/frontend/img/icons/weather/small/561.svg"></image></g></g>
+                                            <g transform="translate(650, -10)"><g class="wwbox"><title>Wisselend bewolkt met een enkele lichte regenbui.</title><image
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50"
+                                                    xlink:href="/frontend/img/icons/weather/small/561.svg"></image></g></g>
+                                            <g transform="translate(725, -10)"><g class="wwbox"><title>Wisselend bewolkt met een enkele lichte regenbui.</title><image
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50"
+                                                    xlink:href="/frontend/img/icons/weather/small/561.svg"></image></g></g>
+                                            <g transform="translate(800, -10)"><g class="wwbox"><title>Wisselend bewolkt met een enkele lichte regenbui.</title><image
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50"
+                                                    xlink:href="/frontend/img/icons/weather/small/561.svg"></image></g></g>
+                                            <g transform="translate(875, -10)"><g class="wwbox"><title>Wisselend bewolkt met een enkele lichte regenbui.</title><image
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50"
+                                                    xlink:href="/frontend/img/icons/weather/small/561.svg"></image></g></g>
+                                            <g transform="translate(950, -10)"><g class="wwbox"><title>Wisselend bewolkt met een enkele lichte regenbui.</title><image
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50"
+                                                    xlink:href="/frontend/img/icons/weather/small/561.svg"></image></g></g></g><g
+                                                transform="translate(0,295)"><g transform="translate(105,0)"><g transform="translate(0,40)"><rect width="60" height="30" style="stroke-width: 1; stroke:rgb(169,169,169);fill:rgba(0,0,0,0);"></rect><circle
+                                                cx="30" cy="15" r="5" class="fill--blue"></circle></g><g
+                                                transform="translate(75, 60)"><text class="text-size--normal">Voorspelling (°)</text></g></g>
+                                            <g transform="translate(420,0)"><g transform="translate(0,40)"><rect width="60" height="30" style="stroke-width: 1; stroke:rgb(169,169,169);" class="graph-line--range-fill"></rect></g>
+                                                <g transform="translate(75, 60)"><text class="text-size--normal">Spreiding van de voorspelling (°)</text></g></g>
+                                            <g transform="translate(787.5,0)"><g transform="translate(0,57)"><path class="graph-line--normal" d="M 0 0, 60 0"></path></g>
+                                                <g transform="translate(75, 60)"><text class="text-size--normal">Klimatologisch gemiddelde (°)</text></g></g></g></svg>
+                                    </forecast-days-item>
+                                    <forecast-days-item type="humidity" icon="raindrop" title="Neerslag">
+                                        <svg class="kmi-svg" version="1.1" x="0px" y="0px" preserveAspectRatio="xMinYMin meet" viewBox="0 0 1150 370" xml:space="preserve">
+
+
+
+
+
+
+
+<style type="text/css">
+         g.wwbox text {
+             display: none;
+         }
+
+         g.wwbox:hover text {
+             display: block;
+         }
+</style><title>Neerslag</title><g transform="translate(100, 271)"><g transform="translate(0, 0)"><text class="fill--livid text-size--normal" transform="translate(-10, 0)">vr</text><text
+                                                class="fill--livid text-size--normal" transform="translate(-18, 18)">02/12</text></g>
+                                            <g transform="translate(75, 0)"><rect class="fill--weekend" x="-37.5" y="-271" width="75" height="250"></rect>
+                                                <text class="fill--livid text-size--normal"
+                                                      transform="translate(-10, 0)">za</text>
+                                                <text class="fill--livid text-size--normal"
+                                                      transform="translate(-18, 18)">03/12</text></g>
+                                            <g transform="translate(150, 0)"><rect class="fill--weekend" x="-37.5" y="-271" width="75" height="250"></rect>
+                                                <text class="fill--livid text-size--normal"
+                                                      transform="translate(-10, 0)">zo</text>
+                                                <text class="fill--livid text-size--normal"
+                                                      transform="translate(-18, 18)">04/12</text></g>
+                                            <g transform="translate(225, 0)"><text class="fill--livid text-size--normal" transform="translate(-10, 0)">ma</text>
+                                                <text class="fill--livid text-size--normal"
+                                                      transform="translate(-18, 18)">05/12</text></g>
+                                            <g transform="translate(300, 0)"><text class="fill--livid text-size--normal" transform="translate(-10, 0)">di</text>
+                                                <text class="fill--livid text-size--normal"
+                                                      transform="translate(-18, 18)">06/12</text></g>
+                                            <g transform="translate(375, 0)"><text class="fill--livid text-size--normal" transform="translate(-10, 0)">wo</text>
+                                                <text class="fill--livid text-size--normal"
+                                                      transform="translate(-18, 18)">07/12</text></g>
+                                            <g transform="translate(450, 0)"><text class="fill--livid text-size--normal" transform="translate(-10, 0)">do</text>
+                                                <text class="fill--livid text-size--normal"
+                                                      transform="translate(-18, 18)">08/12</text></g>
+                                            <g transform="translate(525, 0)"><text class="fill--livid text-size--normal" transform="translate(-10, 0)">vr</text>
+                                                <text class="fill--livid text-size--normal"
+                                                      transform="translate(-18, 18)">09/12</text></g>
+                                            <g transform="translate(600, 0)"><rect class="fill--weekend" x="-37.5" y="-271" width="75" height="250"></rect>
+                                                <text class="fill--livid text-size--normal"
+                                                      transform="translate(-10, 0)">za</text>
+                                                <text class="fill--livid text-size--normal"
+                                                      transform="translate(-18, 18)">10/12</text></g>
+                                            <g transform="translate(675, 0)"><rect class="fill--weekend" x="-37.5" y="-271" width="75" height="250"></rect>
+                                                <text class="fill--livid text-size--normal"
+                                                      transform="translate(-10, 0)">zo</text>
+                                                <text class="fill--livid text-size--normal"
+                                                      transform="translate(-18, 18)">11/12</text></g>
+                                            <g transform="translate(750, 0)"><text class="fill--livid text-size--normal" transform="translate(-10, 0)">ma</text>
+                                                <text class="fill--livid text-size--normal"
+                                                      transform="translate(-18, 18)">12/12</text></g>
+                                            <g transform="translate(825, 0)"><text class="fill--livid text-size--normal" transform="translate(-10, 0)">di</text>
+                                                <text class="fill--livid text-size--normal"
+                                                      transform="translate(-18, 18)">13/12</text></g>
+                                            <g transform="translate(900, 0)"><text class="fill--livid text-size--normal" transform="translate(-10, 0)">wo</text>
+                                                <text class="fill--livid text-size--normal"
+                                                      transform="translate(-18, 18)">14/12</text></g>
+                                            <g transform="translate(975, 0)"><text class="fill--livid text-size--normal" transform="translate(-10, 0)">do</text>
+                                                <text class="fill--livid text-size--normal"
+                                                      transform="translate(-18, 18)">15/12</text></g></g><g
+                                                transform="translate(10, 30)"><g transform="translate(0,220)"><text transform="translate(7,3)" class="fill--livid text-size--normal">0 mm</text><line
+                                                class="guide-line" x1="70" y1="0" x2="1090" y2="0"></line></g>
+                                            <g transform="translate(0,110)"><text transform="translate(7,3)" class="fill--livid text-size--normal">5 mm</text>
+                                                <line class="guide-line" x1="70" y1="0" x2="1090" y2="0"></line></g>
+                                            <g transform="translate(0,0)"><text transform="translate(0,3)" class="fill--livid text-size--normal">10 mm</text>
+                                                <line class="guide-line" x1="70" y1="0" x2="1090" y2="0"></line></g></g><g
+                                                id="graph-group" transform="translate(100, 30)"><path class="graph-line--range-fill" d=" M 0 198 C 25 208.33137436159666, 50 218.6627487231933, 75 220 L 75 220  L 0 220 Z"></path>
+                                            <path class="graph-line--range-fill"
+                                                  d=" M 75 220 C 100 220, 125 213.6803794688235, 150 198 L 150 220  L 75 220 Z"></path>
+                                            <path class="graph-line--range-fill"
+                                                  d=" M 150 198 C 175 182.3196205311765, 200.00000000000003 158.61573340151276, 225 154 L 225 220  L 150 220 Z"></path>
+                                            <path class="graph-line--range-fill"
+                                                  d=" M 225 154 C 249.99999999999997 149.38426659848724, 275 163.8566869251255, 300 176 L 300 220  L 225 220 Z"></path>
+                                            <path class="graph-line--range-fill"
+                                                  d=" M 300 176 C 325 188.1433130748745, 350 197.95751889798527, 375 198 L 375 220  L 300 220 Z"></path>
+                                            <path class="graph-line--range-fill"
+                                                  d=" M 375 198 C 400 198.04248110201473, 425.00000000000006 188.31323748293343, 450 176 L 450 220  L 375 220 Z"></path>
+                                            <path class="graph-line--range-fill"
+                                                  d=" M 450 176 C 474.99999999999994 163.68676251706657, 500 148.789531170281, 525 132 L 525 220  L 450 220 Z"></path>
+                                            <path class="graph-line--range-fill"
+                                                  d=" M 525 132 C 550 115.21046882971898, 575.0000000000001 96.52863783594248, 600 88 L 600 220  L 525 220 Z"></path>
+                                            <path class="graph-line--range-fill"
+                                                  d=" M 600 88 C 624.9999999999999 79.47136216405752, 650 81.09591748594914, 675 88 L 675 220  L 600 220 Z"></path>
+                                            <path class="graph-line--range-fill"
+                                                  d=" M 675 88 C 700 94.90408251405087, 725 107.08769222026106, 750 110 L 750 220  L 675 220 Z"></path>
+                                            <path class="graph-line--range-fill"
+                                                  d=" M 750 110 C 775 112.91230777973894, 800 106.55331363300664, 825 110 L 825 220  L 750 220 Z"></path>
+                                            <path class="graph-line--range-fill"
+                                                  d=" M 825 110 C 850 113.44668636699336, 875 126.69905324771238, 900 132 L 900 220  L 825 220 Z"></path>
+                                            <path class="graph-line--range-fill"
+                                                  d=" M 900 132 C 925 137.30094675228762, 950 134.6504733761438, 975 132 L 975 220  L 900 220 Z"></path>
+                                            <g transform="translate(0, 198)"><rect class="fill--blue-gradient" x="-15" y="0" width="30" height="22"></rect></g>
+                                            <g transform="translate(75, 220)"><rect class="fill--blue-gradient" x="-15" y="0" width="30" height="0"></rect></g>
+                                            <g transform="translate(150, 220)"><rect class="fill--blue-gradient" x="-15" y="0" width="30" height="0"></rect></g>
+                                            <g transform="translate(225, 176)"><rect class="fill--blue-gradient" x="-15" y="0" width="30" height="44"></rect></g>
+                                            <g transform="translate(300, 220)"><rect class="fill--blue-gradient" x="-15" y="0" width="30" height="0"></rect></g>
+                                            <g transform="translate(375, 220)"><rect class="fill--blue-gradient" x="-15" y="0" width="30" height="0"></rect></g>
+                                            <g transform="translate(450, 220)"><rect class="fill--blue-gradient" x="-15" y="0" width="30" height="0"></rect></g>
+                                            <g transform="translate(525, 198)"><rect class="fill--blue-gradient" x="-15" y="0" width="30" height="22"></rect></g>
+                                            <g transform="translate(600, 198)"><rect class="fill--blue-gradient" x="-15" y="0" width="30" height="22"></rect></g>
+                                            <g transform="translate(675, 198)"><rect class="fill--blue-gradient" x="-15" y="0" width="30" height="22"></rect></g>
+                                            <g transform="translate(750, 198)"><rect class="fill--blue-gradient" x="-15" y="0" width="30" height="22"></rect></g>
+                                            <g transform="translate(825, 198)"><rect class="fill--blue-gradient" x="-15" y="0" width="30" height="22"></rect></g>
+                                            <g transform="translate(900, 198)"><rect class="fill--blue-gradient" x="-15" y="0" width="30" height="22"></rect></g>
+                                            <g transform="translate(975, 198)"><rect class="fill--blue-gradient" x="-15" y="0" width="30" height="22"></rect></g></g><g
+                                                transform="translate(0,295)"><g transform="translate(315,0)"><g transform="translate(0,40)"><rect width="60" height="30" class="fill--blue-gradient"></rect></g><g
+                                                transform="translate(75, 60)"><text class="text-size--normal">Neerslaghoeveelheid (mm)</text></g></g>
+                                            <g transform="translate(630,0)"><g transform="translate(0,40)"><rect width="60" height="30" style="stroke-width: 1; stroke:rgb(169,169,169);" class="graph-line--range-fill"></rect></g>
+                                                <g transform="translate(75, 60)"><text class="text-size--normal">Spreiding van de voorspelling (mm)</text></g></g></g></svg>
+                                    </forecast-days-item>
+                                    <forecast-days-item type="wind" icon="wind" title="Wind">
+                                        <svg class="kmi-svg" version="1.1" x="0px" y="0px" preserveAspectRatio="xMinYMin meet" viewBox="0 0 1150 320" xml:space="preserve">
+
+
+
+
+
+
+
+<style type="text/css">
+         g.wwbox text {
+             display: none;
+         }
+
+         g.wwbox:hover text {
+             display: block;
+         }
+</style><title>Gemiddelde wind</title><g transform="translate(100, 291)"><g transform="translate(0, 0)"><text class="fill--livid text-size--normal" transform="translate(-10, 0)">vr</text><text
+                                                class="fill--livid text-size--normal" transform="translate(-18, 18)">02/12</text></g>
+                                            <g transform="translate(75, 0)"><rect class="fill--weekend" x="-37.5" y="-291" width="75" height="270"></rect>
+                                                <text class="fill--livid text-size--normal"
+                                                      transform="translate(-10, 0)">za</text>
+                                                <text class="fill--livid text-size--normal"
+                                                      transform="translate(-18, 18)">03/12</text></g>
+                                            <g transform="translate(150, 0)"><rect class="fill--weekend" x="-37.5" y="-291" width="75" height="270"></rect>
+                                                <text class="fill--livid text-size--normal"
+                                                      transform="translate(-10, 0)">zo</text>
+                                                <text class="fill--livid text-size--normal"
+                                                      transform="translate(-18, 18)">04/12</text></g>
+                                            <g transform="translate(225, 0)"><text class="fill--livid text-size--normal" transform="translate(-10, 0)">ma</text>
+                                                <text class="fill--livid text-size--normal"
+                                                      transform="translate(-18, 18)">05/12</text></g>
+                                            <g transform="translate(300, 0)"><text class="fill--livid text-size--normal" transform="translate(-10, 0)">di</text>
+                                                <text class="fill--livid text-size--normal"
+                                                      transform="translate(-18, 18)">06/12</text></g>
+                                            <g transform="translate(375, 0)"><text class="fill--livid text-size--normal" transform="translate(-10, 0)">wo</text>
+                                                <text class="fill--livid text-size--normal"
+                                                      transform="translate(-18, 18)">07/12</text></g>
+                                            <g transform="translate(450, 0)"><text class="fill--livid text-size--normal" transform="translate(-10, 0)">do</text>
+                                                <text class="fill--livid text-size--normal"
+                                                      transform="translate(-18, 18)">08/12</text></g>
+                                            <g transform="translate(525, 0)"><text class="fill--livid text-size--normal" transform="translate(-10, 0)">vr</text>
+                                                <text class="fill--livid text-size--normal"
+                                                      transform="translate(-18, 18)">09/12</text></g>
+                                            <g transform="translate(600, 0)"><rect class="fill--weekend" x="-37.5" y="-291" width="75" height="270"></rect>
+                                                <text class="fill--livid text-size--normal"
+                                                      transform="translate(-10, 0)">za</text>
+                                                <text class="fill--livid text-size--normal"
+                                                      transform="translate(-18, 18)">10/12</text></g>
+                                            <g transform="translate(675, 0)"><rect class="fill--weekend" x="-37.5" y="-291" width="75" height="270"></rect>
+                                                <text class="fill--livid text-size--normal"
+                                                      transform="translate(-10, 0)">zo</text>
+                                                <text class="fill--livid text-size--normal"
+                                                      transform="translate(-18, 18)">11/12</text></g>
+                                            <g transform="translate(750, 0)"><text class="fill--livid text-size--normal" transform="translate(-10, 0)">ma</text>
+                                                <text class="fill--livid text-size--normal"
+                                                      transform="translate(-18, 18)">12/12</text></g>
+                                            <g transform="translate(825, 0)"><text class="fill--livid text-size--normal" transform="translate(-10, 0)">di</text>
+                                                <text class="fill--livid text-size--normal"
+                                                      transform="translate(-18, 18)">13/12</text></g>
+                                            <g transform="translate(900, 0)"><text class="fill--livid text-size--normal" transform="translate(-10, 0)">wo</text>
+                                                <text class="fill--livid text-size--normal"
+                                                      transform="translate(-18, 18)">14/12</text></g>
+                                            <g transform="translate(975, 0)"><text class="fill--livid text-size--normal" transform="translate(-10, 0)">do</text>
+                                                <text class="fill--livid text-size--normal"
+                                                      transform="translate(-18, 18)">15/12</text></g></g><g
+                                                transform="translate(10, 50)"><g transform="translate(0,220)"><text transform="translate(7,3)" class="fill--livid text-size--normal">0 km/u</text><line
+                                                class="guide-line" x1="70" y1="0" x2="1090" y2="0"></line></g>
+                                            <g transform="translate(0,150)"><text transform="translate(0,3)" class="fill--livid text-size--normal">10 km/u</text>
+                                                <line class="guide-line" x1="70" y1="0" x2="1090" y2="0"></line></g>
+                                            <g transform="translate(0,80)"><text transform="translate(0,3)" class="fill--livid text-size--normal">20 km/u</text>
+                                                <line class="guide-line" x1="70" y1="0" x2="1090" y2="0"></line></g>
+                                            <g transform="translate(0,10)"><text transform="translate(0,3)" class="fill--livid text-size--normal">30 km/u</text>
+                                                <line class="guide-line" x1="70" y1="0" x2="1090" y2="0"></line></g></g><g
+                                                id="graph-group" transform="translate(100, 50)"><path class="graph-line--range-fill" d=""></path>
+                                            <path class="graph-line--range-fill" d=""></path>
+                                            <path class="graph-line--range-fill" d=""></path>
+                                            <path class="graph-line--range-fill" d=""></path>
+                                            <path class="graph-line--range-fill" d=""></path>
+                                            <path class="graph-line--range-fill" d=""></path>
+                                            <path class="graph-line--range-fill" d=""></path>
+                                            <path class="graph-line--range-fill" d=""></path>
+                                            <path class="graph-line--range-fill" d=""></path>
+                                            <path class="graph-line--range-fill" d=""></path>
+                                            <path class="graph-line--range-fill" d=""></path>
+                                            <path class="graph-line--range-fill" d=""></path>
+                                            <path class="graph-line--range-fill" d=""></path>
+                                            <path class="graph-line--range-fill" d=""></path>
+                                            <path class="graph-line--dark"
+                                                  d="M 0 80 C 25 110.57129887941731, 50 141.14259775883463, 75 150"></path>
+                                            <path class="graph-line--dark"
+                                                  d="M 75 150 C 100 158.85740224116537, 125 146.00090784407882, 150 150"></path>
+                                            <path class="graph-line--dark"
+                                                  d="M 150 150 C 175 153.99909215592118, 200.00000000000003 174.8537708648501, 225 185"></path>
+                                            <path class="graph-line--dark"
+                                                  d="M 225 185 C 249.99999999999997 195.1462291351499, 275 194.58400869652075, 300 185"></path>
+                                            <path class="graph-line--dark"
+                                                  d="M 300 185 C 325 175.41599130347925, 350 156.81019434906682, 375 150"></path>
+                                            <path class="graph-line--dark"
+                                                  d="M 375 150 C 400 143.18980565093318, 425.00000000000006 148.17521390721186, 450 150"></path>
+                                            <path class="graph-line--dark"
+                                                  d="M 450 150 C 474.99999999999994 151.82478609278814, 500 150.48895002208582, 525 150"></path>
+                                            <path class="graph-line--dark"
+                                                  d="M 525 150 C 550 149.51104997791418, 575.0000000000001 149.86898600444482, 600 150"></path>
+                                            <path class="graph-line--dark"
+                                                  d="M 600 150 C 624.9999999999999 150.13101399555518, 650 150.03510596013496, 675 150"></path>
+                                            <path class="graph-line--dark"
+                                                  d="M 675 150 C 700 149.96489403986504, 725 149.99059015501535, 750 150"></path>
+                                            <path class="graph-line--dark"
+                                                  d="M 750 150 C 775 150.00940984498465, 800 150.00253341980357, 825 150"></path>
+                                            <path class="graph-line--dark"
+                                                  d="M 825 150 C 850 149.99746658019643, 875 149.99927616577042, 900 150"></path>
+                                            <path class="graph-line--dark"
+                                                  d="M 900 150 C 925 150.00072383422958, 950 150.0003619171148, 975 150"></path>
+                                            <g transform="translate(0, 80)"><image xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="32" transform="translate(-5, -63) rotate(225, 5, 8)" xlink:href="/frontend/img/icons/direction.svg"></image>
+                                                <circle class="fill--livid" r="5" cx="0" cy="0"></circle>
+                                                <text transform="translate(-25, -12)"
+                                                      class="fill--livid text-size--normal">20 km/u</text></g>
+                                            <g transform="translate(75, 150)"><image xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="32" transform="translate(-5, -63) rotate(247, 5, 8)" xlink:href="/frontend/img/icons/direction.svg"></image>
+                                                <circle class="fill--livid" r="5" cx="0" cy="0"></circle>
+                                                <text transform="translate(-25, -12)"
+                                                      class="fill--livid text-size--normal">10 km/u</text></g>
+                                            <g transform="translate(150, 150)"><image xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="32" transform="translate(-5, -63) rotate(270, 5, 8)" xlink:href="/frontend/img/icons/direction.svg"></image>
+                                                <circle class="fill--livid" r="5" cx="0" cy="0"></circle>
+                                                <text transform="translate(-25, -12)"
+                                                      class="fill--livid text-size--normal">10 km/u</text></g>
+                                            <g transform="translate(225, 185)"><circle class="fill--livid" r="5" cx="0" cy="0"></circle>
+                                                <text transform="translate(-20, -12)"
+                                                      class="fill--livid text-size--normal">5 km/u</text></g>
+                                            <g transform="translate(300, 185)"><circle class="fill--livid" r="5" cx="0" cy="0"></circle>
+                                                <text transform="translate(-20, -12)"
+                                                      class="fill--livid text-size--normal">5 km/u</text></g>
+                                            <g transform="translate(375, 150)"><image xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="32" transform="translate(-5, -63) rotate(90, 5, 8)" xlink:href="/frontend/img/icons/direction.svg"></image>
+                                                <circle class="fill--livid" r="5" cx="0" cy="0"></circle>
+                                                <text transform="translate(-25, -12)"
+                                                      class="fill--livid text-size--normal">10 km/u</text></g>
+                                            <g transform="translate(450, 150)"><image xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="32" transform="translate(-5, -63) rotate(22, 5, 8)" xlink:href="/frontend/img/icons/direction.svg"></image>
+                                                <circle class="fill--livid" r="5" cx="0" cy="0"></circle>
+                                                <text transform="translate(-25, -12)"
+                                                      class="fill--livid text-size--normal">10 km/u</text></g>
+                                            <g transform="translate(525, 150)"><image xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="32" transform="translate(-5, -63) rotate(45, 5, 8)" xlink:href="/frontend/img/icons/direction.svg"></image>
+                                                <circle class="fill--livid" r="5" cx="0" cy="0"></circle>
+                                                <text transform="translate(-25, -12)"
+                                                      class="fill--livid text-size--normal">10 km/u</text></g>
+                                            <g transform="translate(600, 150)"><image xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="32" transform="translate(-5, -63) rotate(45, 5, 8)" xlink:href="/frontend/img/icons/direction.svg"></image>
+                                                <circle class="fill--livid" r="5" cx="0" cy="0"></circle>
+                                                <text transform="translate(-25, -12)"
+                                                      class="fill--livid text-size--normal">10 km/u</text></g>
+                                            <g transform="translate(675, 150)"><image xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="32" transform="translate(-5, -63) rotate(45, 5, 8)" xlink:href="/frontend/img/icons/direction.svg"></image>
+                                                <circle class="fill--livid" r="5" cx="0" cy="0"></circle>
+                                                <text transform="translate(-25, -12)"
+                                                      class="fill--livid text-size--normal">10 km/u</text></g>
+                                            <g transform="translate(750, 150)"><image xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="32" transform="translate(-5, -63) rotate(45, 5, 8)" xlink:href="/frontend/img/icons/direction.svg"></image>
+                                                <circle class="fill--livid" r="5" cx="0" cy="0"></circle>
+                                                <text transform="translate(-25, -12)"
+                                                      class="fill--livid text-size--normal">10 km/u</text></g>
+                                            <g transform="translate(825, 150)"><image xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="32" transform="translate(-5, -63) rotate(45, 5, 8)" xlink:href="/frontend/img/icons/direction.svg"></image>
+                                                <circle class="fill--livid" r="5" cx="0" cy="0"></circle>
+                                                <text transform="translate(-25, -12)"
+                                                      class="fill--livid text-size--normal">10 km/u</text></g>
+                                            <g transform="translate(900, 150)"><image xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="32" transform="translate(-5, -63) rotate(225, 5, 8)" xlink:href="/frontend/img/icons/direction.svg"></image>
+                                                <circle class="fill--livid" r="5" cx="0" cy="0"></circle>
+                                                <text transform="translate(-25, -12)"
+                                                      class="fill--livid text-size--normal">10 km/u</text></g>
+                                            <g transform="translate(975, 150)"><image xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="32" transform="translate(-5, -63) rotate(45, 5, 8)" xlink:href="/frontend/img/icons/direction.svg"></image>
+                                                <circle class="fill--livid" r="5" cx="0" cy="0"></circle>
+                                                <text transform="translate(-25, -12)"
+                                                      class="fill--livid text-size--normal">10 km/u</text></g></g></svg>
+                                    </forecast-days-item>
+                                </forecast-days>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="news-overview-pp">
+            <div class="container"><h2 class="news-overview-pp__title"><a class="news-overview-pp__title__link"
+                                                                          href="https://www.meteo.be/nl/info/nieuwsoverzicht">Nieuws</a>
+            </h2>
+                <div class="news-overview-pp__content">
+                    <div class="news-overview-pp__content__wrapper"><a
+                            href="/nl/info/nieuwsoverzicht/eerste-klimatologische-overzichten-van-november-en-van-de-herfst-2022"
+                            class="news-overview-pp__content__item">
+                        <figure class="news-overview-pp__content__item__figure"
+                                style="background-image:url(https://www.meteo.be/media/cache/news_overview_pp_jpg/uploads/media/6388881ad7185/img-2373.jpg)">
+                            <img src="https://www.meteo.be/media/cache/news_overview_pp_jpg/uploads/media/6388881ad7185/img-2373.jpg"
+                                 alt=""/></figure>
+                        <div class="news-overview-pp__content__item__wrap"><p
+                                class="news-overview-pp__content__item__date">
+                            01/12/2022
+                        </p>
+                            <h3 class="news-overview-pp__content__item__title">
+                                Eerste klimatologische overzichten van november en van de herfst 2022
+                            </h3></div>
+                    </a><a href="/nl/info/nieuwsoverzicht/new-page-v5" class="news-overview-pp__content__item">
+                        <figure class="news-overview-pp__content__item__figure"
+                                style="background-image:url(https://www.meteo.be/media/cache/news_overview_pp_jpg/uploads/media/5de682c906dba/job-1.jpg)">
+                            <img src="https://www.meteo.be/media/cache/news_overview_pp_jpg/uploads/media/5de682c906dba/job-1.jpg"
+                                 alt=""/></figure>
+                        <div class="news-overview-pp__content__item__wrap"><p
+                                class="news-overview-pp__content__item__date">
+                            30/11/2022
+                        </p>
+                            <h3 class="news-overview-pp__content__item__title">
+                                New Position at the Royal Meteorological Institute of Belgium
+                            </h3></div>
+                    </a><a href="/nl/info/nieuwsoverzicht/officiele-opening-van-het-klimaatcentrum"
+                           class="news-overview-pp__content__item">
+                        <figure class="news-overview-pp__content__item__figure"
+                                style="background-image:url(https://www.meteo.be/media/cache/news_overview_pp_jpg/uploads/media/63876c34a532f/52533130027-275324bf7e-o.jpg)">
+                            <img src="https://www.meteo.be/media/cache/news_overview_pp_jpg/uploads/media/63876c34a532f/52533130027-275324bf7e-o.jpg"
+                                 alt=""/></figure>
+                        <div class="news-overview-pp__content__item__wrap"><p
+                                class="news-overview-pp__content__item__date">
+                            30/11/2022
+                        </p>
+                            <h3 class="news-overview-pp__content__item__title">
+                                Officiële opening van het Klimaatcentrum
+                            </h3></div>
+                    </a><a href="/nl/info/nieuwsoverzicht/eerste-klimatologisch-overzicht-van-oktober-2022"
+                           class="news-overview-pp__content__item">
+                        <figure class="news-overview-pp__content__item__figure"
+                                style="background-image:url(https://www.meteo.be/media/cache/news_overview_pp_jpg/uploads/media/6363740f0d4ac/img-9961.jpg)">
+                            <img src="https://www.meteo.be/media/cache/news_overview_pp_jpg/uploads/media/6363740f0d4ac/img-9961.jpg"
+                                 alt=""/></figure>
+                        <div class="news-overview-pp__content__item__wrap"><p
+                                class="news-overview-pp__content__item__date">
+                            03/11/2022
+                        </p>
+                            <h3 class="news-overview-pp__content__item__title">
+                                Eerste klimatologisch overzicht van oktober 2022
+                            </h3></div>
+                    </a><a href="/nl/info/nieuwsoverzicht/wat-zorgt-voor-deze-lange-periode-van-nazomerweer"
+                           class="news-overview-pp__content__item">
+                        <figure class="news-overview-pp__content__item__figure"
+                                style="background-image:url(https://www.meteo.be/media/cache/news_overview_pp_jpg/uploads/media/6356863bf383a/nazomer.jpg)">
+                            <img src="https://www.meteo.be/media/cache/news_overview_pp_jpg/uploads/media/6356863bf383a/nazomer.jpg"
+                                 alt=""/></figure>
+                        <div class="news-overview-pp__content__item__wrap"><p
+                                class="news-overview-pp__content__item__date">
+                            25/10/2022
+                        </p>
+                            <h3 class="news-overview-pp__content__item__title">
+                                Wat zorgt voor deze lange periode van nazomerweer?
+                            </h3></div>
+                    </a><a href="/nl/info/nieuwsoverzicht/researcher-for-the-project-e-trend"
+                           class="news-overview-pp__content__item">
+                        <figure class="news-overview-pp__content__item__figure"
+                                style="background-image:url(https://www.meteo.be/media/cache/news_overview_pp_jpg/uploads/media/5de682c906dba/job-1.jpg)">
+                            <img src="https://www.meteo.be/media/cache/news_overview_pp_jpg/uploads/media/5de682c906dba/job-1.jpg"
+                                 alt=""/></figure>
+                        <div class="news-overview-pp__content__item__wrap"><p
+                                class="news-overview-pp__content__item__date">
+                            20/10/2022
+                        </p>
+                            <h3 class="news-overview-pp__content__item__title">
+                                Scientific modeler for project E-TREND
+                            </h3></div>
+                    </a><a href="/nl/info/nieuwsoverzicht/impact-van-toegenomen-kosmische-straling-uv-straling-en-de-kwetsbaarheid-van-het-ozonschild-voor-de-biosfeer-en-onze-gezondheid"
+                           class="news-overview-pp__content__item">
+                        <figure class="news-overview-pp__content__item__figure"
+                                style="background-image:url(https://www.meteo.be/media/cache/news_overview_pp_png/uploads/media/6346934cbbbf6/euramet-sunlight-cosmic-rays-uv.jpg?originalExtension=png)">
+                            <img src="https://www.meteo.be/media/cache/news_overview_pp_png/uploads/media/6346934cbbbf6/euramet-sunlight-cosmic-rays-uv.jpg?originalExtension=png"
+                                 alt=""/></figure>
+                        <div class="news-overview-pp__content__item__wrap"><p
+                                class="news-overview-pp__content__item__date">
+                            12/10/2022
+                        </p>
+                            <h3 class="news-overview-pp__content__item__title">
+                                Impact van toegenomen kosmische straling, uv-straling en de kwetsbaarheid van het
+                                ozonschild voor de biosfeer en onze gezondheid
+                            </h3></div>
+                    </a><a href="/nl/info/nieuwsoverzicht/eerste-klimatologisch-overzicht-van-september-2022"
+                           class="news-overview-pp__content__item">
+                        <figure class="news-overview-pp__content__item__figure"
+                                style="background-image:url(https://www.meteo.be/media/cache/news_overview_pp_jpg/uploads/media/633bf5be4e3ae/pexels-photo-695207.jpg?originalExtension=jpeg)">
+                            <img src="https://www.meteo.be/media/cache/news_overview_pp_jpg/uploads/media/633bf5be4e3ae/pexels-photo-695207.jpg?originalExtension=jpeg"
+                                 alt=""/></figure>
+                        <div class="news-overview-pp__content__item__wrap"><p
+                                class="news-overview-pp__content__item__date">
+                            04/10/2022
+                        </p>
+                            <h3 class="news-overview-pp__content__item__title">
+                                Eerste klimatologisch overzicht van september 2022
+                            </h3></div>
+                    </a></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="js-backstretch backstretch__image ">
+        <noscript>
+            <!-- From cache: true -->
+            <img src="/Background/reshaped/2000/CC/5751933300_a510c687eb_o_edited.jpg?v20221117-0704"
+                 class="office__picture__img">
+        </noscript>
+    </div>
+</div>
+<footer role="footer" class="footer mobile-nav__content">
+    <section class="app-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="app-footer__content"><h4 class="app-footer__content__title">Het weer, in je
+                        broekzak!</h4>
+                        <ul class="list-reset app-footer__content__list">
+                            <li class="app-footer__content__list__item"><i
+                                    class="icon icon--check app-footer__content__list__item__icon"></i>
+                                <p class="app-footer__content__list__item__text">
+                                    Het weeroverzicht, altijd binnen handbereik
+                                </p></li>
+                            <li class="app-footer__content__list__item"><i
+                                    class="icon icon--check app-footer__content__list__item__icon"></i>
+                                <p class="app-footer__content__list__item__text">
+                                    Krijg meldingen over nakend onweer in jouw buurt
+                                </p></li>
+                            <li class="app-footer__content__list__item"><i
+                                    class="icon icon--check app-footer__content__list__item__icon"></i>
+                                <p class="app-footer__content__list__item__text">
+                                    Vermijd regenvlagen dankzij de neerslagradar
+                                </p></li>
+                        </ul>
+                        <div class="app-footer__content__applinks"><a
+                                href="https://itunes.apple.com/be/app/meteo.be/id393832976"
+                                class="app-footer__content__applinks__link"><img
+                                src="/frontend/img/footer/app-store.svg?v20221117-0704" alt="Download in de App Store"></a><a
+                                href="https://play.google.com/store/apps/details?id=be.irm.kmi.meteo&amp;hl=nl"
+                                class="app-footer__content__applinks__link"><img
+                                src="/frontend/img/footer/google-play.svg?v20221117-0704"
+                                alt="Get it on Google play"></a></div>
+                    </div>
+                    <div class="app-footer__preview"><img src="/frontend/img/footer/app.png?v20221117-0704" alt=""
+                                                          class="app-footer__preview__img"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="main-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 col-sm-3">
+                    <nav class="footer-nav"><h6 class="footer-nav__title"><a href="/nl" class="footer-nav__title__link">Het
+                        weer in België</a></h6><a href="/nl/weer/verwachtingen/weer-voor-de-komende-dagen"
+                                                  class="footer-nav__item">
+                        Weerbericht
+                    </a><a href="/nl/weer/waarnemingen" class="footer-nav__item">
+                        Waarnemingen
+                    </a><a href="/nl/weer/waarschuwingen" class="footer-nav__item">
+                        Waarschuwingen
+                    </a></nav>
+                </div>
+                <div class="col-md-2 col-sm-3">
+                    <nav class="footer-nav"><h6 class="footer-nav__title"><a href="#" class="footer-nav__title__link">Klimaat</a>
+                    </h6><a href="/nl/klimaat/klimaat-van-belgie/klimatologisch-overzicht" class="footer-nav__item">
+                        Klimatologisch overzicht
+                    </a><a href="/nl/unpublish/algemeen-klimaat-belgie/klimaatatlas" class="footer-nav__item"></a><a
+                            href="/nl/klimaat/klimaatverandering-in-belgie/de-klimaatvooruitzichten-voor-2100"
+                            class="footer-nav__item"></a><a
+                            href="/nl/klimaat/klimaat-van-belgie/klimatologische-kaarten" class="footer-nav__item">
+                        Klimatologische kaarten
+                    </a></nav>
+                </div>
+                <div class="col-md-2 col-sm-3">
+                    <nav class="footer-nav"><h6 class="footer-nav__title"><a href="#" class="footer-nav__title__link">Andere
+                        websites van het KMI</a></h6><a href="http://dourbes.meteo.be/nl/" class="footer-nav__item">
+                        KMI in Dourbes
+                    </a><a href="http://radar.meteo.be/" class="footer-nav__item">
+                        Radar
+                    </a><a href="https://ozone.meteo.be/" class="footer-nav__item">
+                        Ozon
+                    </a><a href="http://remotesensing.oma.be/" class="footer-nav__item">
+                        Remote Sensing
+                    </a><a href="http://climdyn.meteo.be" class="footer-nav__item">
+                        Climate Dynamics
+                    </a><a href="http://hydroland.meteo.be" class="footer-nav__item">
+                        Hydroland
+                    </a></nav>
+                </div>
+                <div class="col-md-2 col-sm-3">
+                    <nav class="footer-nav"><h6 class="footer-nav__title"><a href="/nl/over-het-kmi/links"
+                                                                             class="footer-nav__title__link">Links</a>
+                    </h6><a href="/nl/over-het-kmi/links" class="footer-nav__item">
+                        Europese meteorologische diensten
+                    </a><a href="nl/over-het-kmi/links" class="footer-nav__item">
+                        Internationale organisaties
+                    </a><a href="nl/over-het-kmi/links" class="footer-nav__item">
+                        Nationale organisaties
+                    </a><a href="nl/over-het-kmi/links" class="footer-nav__item">
+                        Federale Wetenschappelijke Instellingen
+                    </a></nav>
+                </div>
+                <div class="col-md-2 col-sm-3">
+                    <nav class="footer-nav"><h6 class="footer-nav__title"><a href="#" class="footer-nav__title__link">Werken
+                        bij het KMI</a></h6><a href="/nl/over-het-kmi/werken-bij-het-kmi/actuele-vacatures"
+                                               class="footer-nav__item">
+                        Vacatures
+                    </a><a href="/nl/over-het-kmi/werken-bij-het-kmi" class="footer-nav__item">
+                        Stages
+                    </a></nav>
+                </div>
+                <div class="col-md-2 col-sm-3">
+                    <nav class="footer-nav"><h6 class="footer-nav__title"><a href="#" class="footer-nav__title__link">Contact</a>
+                    </h6><a href="/nl/over-het-kmi/contact/gegevens-kmi" class="footer-nav__item">
+                        Contactgegevens
+                    </a><a href="https://twitter.com/meteobenl" class="footer-nav__item">
+                        Twitter
+                    </a><a href="https://www.instagram.com/kmi_irm" class="footer-nav__item">
+                        Instagram
+                    </a><a href="https://www.facebook.com/kmi.be" class="footer-nav__item">
+                        Facebook
+                    </a></nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sub-footer--kmi">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 col-sm-9"><img src="/frontend/img/general/logo-kmi--nl.svg?v20221117-0704" alt=""
+                                                    class="sub-footer--kmi__logo">
+                    <p class="sub-footer--kmi__text">
+                        Het Koninklijk Meteorologisch Instituut van België levert betrouwbare diensten gebaseerd op
+                        onderzoek, innovatie en continuïteit. Omdat het KMI een ecodynamisch instituut is, kreeg het een
+                        3-sterren ECO-label en een EMAS milieumanagementsysteem certificatie.
+                    </p></div>
+                <div class="col-md-3 col-sm-3">
+                    <div class="footer-social"><h6 class="footer-social__title">Volg ons</h6><a
+                            href="https://www.facebook.com/kmi.be" class="footer-social__links" target="_blank"><i
+                            class="icon icon--facebook footer-social__links__icon"></i></a><a
+                            href="https://twitter.com/meteobenl" class="footer-social__links" target="_blank"><i
+                            class="icon icon--twitter footer-social__links__icon"></i></a><a
+                            href="https://www.instagram.com/kmi_irm/" class="footer-social__links" target="_blank"><i
+                            class="icon icon--instagram footer-social__links__icon"></i></a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sub-footer">
+        <div class="container">
+            <div class="sub-footer__inner">
+                <div class="sub-footer__info"><p class="sub-footer__info__time">
+                    &copy; KMI 2022
+                </p></div>
+                <ul class="sub-footer__nav__list">
+                    <li class="sub-footer__nav__list__item"><a
+                            href="/nl/over-het-kmi/juridische-informatie/gebruiksvoorwaarden" class="">Gebruiksvoorwaarden</a>
+                    </li>
+                    <li class="sub-footer__nav__list__item"><a
+                            href="/nl/over-het-kmi/juridische-informatie/vertrouwelijkheidsverklaring" class="">GDPR</a>
+                    </li>
+                </ul>
+                <ul class="sub-footer__nav__list">
+                    <li class="sub-footer__nav__list__item"><a class="js-kmcc-extended-modal-button"
+                                                               data-target="legal_privacy_policy"
+                                                               data-url="/nl/legal/modal/legal_privacy_policy">
+                        Privacybeleid
+                    </a></li>
+                    <li class="sub-footer__nav__list__item"><a class="js-kmcc-extended-modal-button"
+                                                               data-target="legal_cookie_preferences"
+                                                               data-url="/nl/legal/modal/legal_cookie_preferences">
+                        Cookie voorkeuren
+                    </a></li>
+                </ul>
+                <p class="sub-footer__credentials">
+                    Creatie door <a href="http://www.kunstmaan.be" target="_blank"
+                                    class="sub-footer__credentials__link"><i
+                        class="icon icon--kuma sub-footer__credentials__icon"></i></a></p>
+                <div class="sub-footer__partners"><a href="http://www.belspo.be/" target="_blank"
+                                                     class="sub-footer__partners__link"><img
+                        src="/frontend/img/footer/belspo-logo.png?v20221117-0704" alt="belspo logo"
+                        class="sub-footer__partners__link__img"></a><a href="http://www.belgium.be/" target="_blank"
+                                                                       class="sub-footer__partners__link"><img
+                        src="/frontend/img/footer/be-logo.png?v20221117-0704" alt="be logo"
+                        class="sub-footer__partners__link__img"></a></div>
+            </div>
+        </div>
+    </section>
+</footer>
+<button type="button" class="btn backstretch__button" data-toggle="modal" data-target="#backstretch-options">
+    Achtergrondafbeelding
+</button>
+<div class="modal js-modal" id="backstretch-options" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <button type="button" class="modal__close" data-dismiss="modal" aria-label="Close"><i
+                class="icon icon--cross"></i></button>
+        <div class="modal-content box">
+            <div class="modal-header"><h4 class="modal-title" id="myModalLabel">
+                Achtergrondafbeelding
+            </h4></div>
+            <div class="modal-body"><p>Vind je onze achtergrondafbeelding maar niks? Geen probleem. Hier kan je te allen
+                tijde de achtergrondafbeelding aan- of uitschakelen.</p><a target="_blank"
+                                                                           class="js-download-backstretch" href="">
+                Download achtergrondafbeelding
+            </a></div>
+            <div class="modal-footer">
+                <div class="checkbox"><input id="backstretch-checkbox" title="hide" type="checkbox" name="hide"
+                                             value="hide" class="js-backstretch-input"><label
+                        for="backstretch-checkbox">
+                    Achtergrondafbeelding verbergen
+                </label></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/frontend/js/bundle-app.js?v20221117-0704"></script>
+<script src="https://www.google.com/recaptcha/api.js?hl=nl"></script>
+<div class="modal-backdrop js-modal-backdrop"></div>
+<kuma-cookie-bar>
+    <!-- START of Kunstmaan cookie bar -->
+    <div id="kmcc-backdrop" class="kmcc-backdrop"></div>
+    <div id="kmcc-cookie-bar" class="kmcc-cookie-bar">
+        <div class="kmcc-container"><h2>Deze website werkt optimaal met cookies</h2>
+            <div class="kmcc-row">
+                <div class="kmcc-col js-kmcc-collapsible-content">
+                    <h5 class="kmcc-collapsible-content__title js-kmcc-collapsible-content__title"><span>Functionele cookies</span>
+                        <svg class="icon icon--chevron--down kmcc-collapsible-content__title__icon">
+                            <use xlink:href="/frontend/img/legal/svg/symbol-defs.svg#icon--chevron--down"></use>
+                        </svg>
+                    </h5>
+                    <div class="kmcc-collapsible-content__content-container">
+                        <div class="kmcc-collapsible-content__content js-kmcc-collapsible-content__content"><p>Dit zijn
+                            noodzakelijke cookies die ervoor zorgen dat deze website goed functioneert.</p></div>
+                    </div>
+                </div>
+                <div class="kmcc-col js-kmcc-collapsible-content">
+                    <h5 class="kmcc-collapsible-content__title js-kmcc-collapsible-content__title"><span>Analyserende cookies</span>
+                        <svg class="icon icon--chevron--down kmcc-collapsible-content__title__icon">
+                            <use xlink:href="/frontend/img/legal/svg/symbol-defs.svg#icon--chevron--down"></use>
+                        </svg>
+                    </h5>
+                    <div class="kmcc-collapsible-content__content-container">
+                        <div class="kmcc-collapsible-content__content js-kmcc-collapsible-content__content"><p>Hiermee
+                            kunnen we het algemeen gebruik van deze website meten.</p></div>
+                    </div>
+                </div>
+            </div>
+            <div class="kmcc-cookie-bar__footer">
+                <div class="kmcc-cookie-bar__footer__preferences">
+                    <div class="kmcc-cookie-bar__footer__preferences__first"><p>U kan deze instellingen op elk moment
+                        aanpassen in je <a class="js-kmcc-extended-modal-button"
+                                           data-url="/nl/legal/modal/legal_cookie_preferences">cookie-voorkeuren</a>.
+                        Bekijk ook ons <a class="js-kmcc-extended-modal-button" data-target="legal_privacy_policy"
+                                          data-url="/nl/legal/modal/legal_privacy_policy">privacybeleid</a>.</p></div>
+                    <div class="kmcc-cookie-bar__footer__preferences__first--mobile"><a
+                            class="js-kmcc-extended-modal-button" data-target="legal_privacy_policy"
+                            data-url="/nl/legal/modal/legal_privacy_policy">privacybeleid</a></div>
+                    <div class="kmcc-cookie-bar__footer__preferences__second"><a id="kmcc-accept-all-cookies"
+                                                                                 class="btn btn--primary kmcc-btn kmcc-btn--spaced"
+                                                                                 href="#"
+                                                                                 data-href="/nl/legal/toggle-all-cookies">
+                        Ik aanvaard al deze cookies</a> <a class="js-kmcc-extended-modal-button"
+                                                           data-target="legal_cookie_preferences"
+                                                           data-url="/nl/legal/modal/legal_cookie_preferences"> Ik wil
+                        graag mijn cookie-voorkeuren zelf instellen </a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <input type="hidden" id="kmcc-modal-content-url" value="/nl/legal/modal/legal_cookie_preferences">
+    <div id="kmcc-cookie-modal" class="kmcc-cookie-modal legal-modal--narrow">
+        <svg id="kmcc-cookie-modal__close-button" class="icon icon--cross svg-parent kmcc-btn-close-modal">
+            <use xlink:href="/frontend/img/legal/svg/symbol-defs.svg#icon--cross"></use>
+        </svg>
+        <div id="kmcc-modal-content" class="kmcc-cookie-modal__content">
+            <div id="kmcc-modal-content-wrapper"></div>
+        </div>
+        <div class="kmcc-cookie-modal__detail-view"><a href="#" id="kmcc-close-detail" class="kmcc-btn-close-detail">
+            <svg class="icon icon--chevron--down kmcc-btn-close-detail__icon">
+                <use xlink:href="/frontend/img/legal/svg/symbol-defs.svg#icon--chevron--down"></use>
+            </svg>
+            <span class="kmcc-btn-close-detail__text">        terug    </span></a>
+            <div id="kmcc-detail-content" class="kmcc-cookie-modal__detail-view__content-wrapper"></div>
+        </div>
+    </div>
+    <div id="kmcc-notification" class="kmcc-notification"><p class="kmcc-notification__content"> Cookies opgeslagen </p>
+    </div><!-- END of Kunstmaan cookie bar -->
+</kuma-cookie-bar>
+</body>
+</html>

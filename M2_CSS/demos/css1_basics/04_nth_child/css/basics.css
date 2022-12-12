@@ -1,0 +1,5 @@
+p:nth-child(3n+2) {
+    font-weight: bold;
+    font-variant: small-caps;
+    color: #ff1493;
+}

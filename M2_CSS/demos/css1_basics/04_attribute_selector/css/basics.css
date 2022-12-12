@@ -1,0 +1,7 @@
+img[width] {
+    border: solid green 12px;
+}
+
+img[width="200"] {
+    border: solid 6px red;
+}

@@ -1,0 +1,22 @@
+body {
+    font-family: verdana, sans-serif;
+
+    background-color: #afcbd9;
+}
+
+h1 {
+    font-family: serif;
+    font-size: xxx-large;
+    color: navy;
+    text-shadow: 0 0 3px white;
+}
+
+h2 {
+    font-family: serif;
+    font-size: xx-large;
+    color: hotpink;
+}
+
+h3 {
+    font-family: Verdana;
+}

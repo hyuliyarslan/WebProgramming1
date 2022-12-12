@@ -1,0 +1,19 @@
+body {
+    font-family: verdana, helvetica, arial, sans-serif;
+    font-size: 1.25rem;
+}
+
+p {
+    width: 25%;
+    border: solid 2px red;
+    white-space: normal;
+}
+
+p.word {
+    word-spacing: 0.5rem;
+}
+
+p.letter {
+    letter-spacing: -0.15rem;
+}
+

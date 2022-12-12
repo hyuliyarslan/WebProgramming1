@@ -1,0 +1,69 @@
+/*
+    https://css-tricks.com/specifics-on-css-specificity/
+    https://uxengineer.com/css-specificity-avoid-important-css/
+ */
+#pasta .favorite {
+    color: green;
+    font-weight: bold;
+}
+
+body {
+    font-size: 3em;
+}
+
+ul#pasta li {
+    color: blue;
+    font-style: italic;
+}
+
+.favorite {
+    color: red;
+    font-weight: bold;
+}
+
+/*
+    Specificity:
+        inline styling,   id attribute,     class value,    element reference
+ */
+
+/*
+    inline styling          0
+    id attribute            1       #pasta
+    class value             0
+    elemeent reference      2       ul  li
+
+    ==>     0,  1,  0,  2       --> 0102
+ */
+ul#pasta li {
+    color: blue;
+    font-style: italic;
+}
+
+/*
+    inline styling          0
+    id attribute            0
+    class value             1       favorite
+    element reference       0
+
+    ==>     0,  0,  1,  0       --> 0010
+ */
+.favorite {
+    color: red;
+    font-weight: bold;
+}
+
+/*
+    inline styling          0
+    id attribute            1       #pasta
+    class value             1       favorite
+    element reference       0
+
+    ==>     0,  1,  1,  0       --> 0110
+ */
+/*
+#pasta .favorite {
+    color: red;
+    font-weight: bold;
+}
+*/
+

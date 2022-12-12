@@ -1,0 +1,25 @@
+p {
+    width: 200px;
+    height: 200px;
+    border: solid 2px red;
+}
+
+p.vb1 {
+    background: radial-gradient(circle, white, black);
+}
+
+p.vb2 {
+    background: radial-gradient(circle at top left, green, orange);
+}
+
+p.vb3 {
+    background: radial-gradient(farthest-side circle at right bottom, black, red);
+}
+
+p.vb4 {
+    background: repeating-linear-gradient(to right, #B5FFCC, #B5FFCC 20px, black 20px, black 30px);
+}
+
+p.vb5 {
+    background: repeating-radial-gradient(greenyellow, greenyellow 10px, orange 20px);
+}

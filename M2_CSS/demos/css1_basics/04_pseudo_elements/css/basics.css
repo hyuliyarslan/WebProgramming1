@@ -1,0 +1,17 @@
+body {
+    font-family: verdana, sans-serif;
+}
+
+p.rule::first-line {
+    font-variant: small-caps;
+}
+
+p::first-letter {
+    font-family: cursive;
+    font-size: 3rem;
+}
+
+p.intro::first-letter {
+    color: red;
+}
+

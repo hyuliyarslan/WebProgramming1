@@ -1,0 +1,17 @@
+p {
+    width: 25%;
+    height: 200px;
+    border: solid 1px red;
+}
+
+p.vb1 {
+    border-radius: 2em; /* all corners */
+}
+
+p.vb2 {
+    border-radius: 15px 0;
+}
+
+p.vb3 {
+    border-radius: 2em 4em 6em;
+}

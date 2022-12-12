@@ -1,0 +1,12 @@
+h1::before {
+    content: url(../images/smiley.png);
+}
+
+p::after {
+    content: "...";
+}
+
+::selection {
+    color: red;
+    background: yellow;
+}

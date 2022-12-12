@@ -1,0 +1,11 @@
+body {
+    background: #B5FFCC url(../images/colourful-dancer-rain-bow.jpg) no-repeat fixed center center;
+    font-family: verdana, sans-serif;
+}
+
+p {
+    border: double 3px;
+    width: 50%;
+    height: 400px;
+    background: url(../images/jennifer.jpg) no-repeat;
+}

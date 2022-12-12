@@ -1,0 +1,9 @@
+p {
+    width: 25%;
+    text-indent: 1rem;
+}
+
+p.inverse {
+    margin-left: 1rem;
+    text-indent: -1rem;
+}

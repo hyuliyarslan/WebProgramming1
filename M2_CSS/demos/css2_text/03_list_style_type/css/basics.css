@@ -1,0 +1,15 @@
+.bullets {
+    list-style-type: circle;
+}
+
+.cijfers {
+    list-style-type: decimal;
+}
+
+.letters {
+    list-style-type: lower-latin;
+}
+
+.romeins {
+    list-style-type: upper-roman;
+}

@@ -1,0 +1,13 @@
+ul > li:nth-child(4n+1) {
+    color: white;
+    background-color: darkgrey;
+}
+ul > li:nth-child(4n+2) {
+    color: white;
+    background-color: black;
+}
+
+ul > li:nth-child(4n+3) {
+    color: black;
+    background-color: dimgray;
+}

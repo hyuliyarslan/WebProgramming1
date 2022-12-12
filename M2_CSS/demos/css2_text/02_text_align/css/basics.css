@@ -1,0 +1,24 @@
+body {
+    text-align: center;
+}
+
+p {
+    border: solid 2px red;
+    width: 25%;
+    text-align: left;
+    /* default is start and is the same as left in left to right languages  */
+}
+
+p.inherit {
+    text-align: inherit;
+}
+
+p.end {
+    text-align: right;
+}
+
+p.fill {
+    text-align: justify;
+}
+
+

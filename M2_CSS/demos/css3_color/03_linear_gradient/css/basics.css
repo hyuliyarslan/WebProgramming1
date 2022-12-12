@@ -1,0 +1,23 @@
+p {
+    width: 30%;
+    height: 200px;
+    border: solid 2px red;
+}
+
+p.vb1 {
+    background: linear-gradient(135deg, black, white);
+}
+
+p.vb2 {
+    background: linear-gradient(black, orange, yellow 75%);
+}
+
+p.vb3 {
+    background: linear-gradient(to right, white 33%, red 33%, red 66%, white 66%);
+}
+
+p.vb4 {
+    background: linear-gradient(to right, #B5FFCC 20px, black 10px);
+    background-size: 30px;
+    background-repeat: repeat;
+}
